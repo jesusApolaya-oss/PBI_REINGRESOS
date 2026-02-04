@@ -1,0 +1,38 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Conex","BBDD","DimCarrera","DimSede","Conva","Actualizacion","EquiposReingreso","DimResponsables","Grupos_Conva"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_ec4fcaeb-991d-4d31-a94e-82b1c52724dd
+ref table BBDD
+ref table LocalDateTable_1cd75f2d-8b4c-469b-94ac-f0f2593dfbf7
+ref table DimCarrera
+ref table DimSede
+ref table LocalDateTable_448ae65c-e4fc-483b-a67b-ab9c446cdef0
+ref table CalendarioFechaCreacion
+ref table Conva
+ref table LocalDateTable_3d293561-65fb-46a6-8c0c-f174ef6aa845
+ref table LocalDateTable_c6756edd-6577-459b-adcc-fbb4caf10abd
+ref table LocalDateTable_1f895182-dae9-46b1-b82e-371cfbcc1e19
+ref table Actualizacion
+ref table LocalDateTable_46db60d3-d94b-4dd1-b9df-b1c6d3aa5ff3
+ref table EquiposReingreso
+ref table CalendarioFechaModificacion
+ref table LocalDateTable_9b577007-c35a-41fa-abfe-226ce0cd071b
+ref table 'Tipo casos atendidos'
+ref table DimResponsables
+ref table LocalDateTable_fcea5036-825d-43c4-b045-513a8bc06af1
+ref table Medidas
+ref table Grupos_Conva
+
+ref cultureInfo es-MX
+

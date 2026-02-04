@@ -1,0 +1,49 @@
+table 'Tipo casos atendidos'
+	lineageTag: 8fb10e75-c4bf-45fa-8973-73dd2d82cbc6
+
+	column 'Tipo casos atendidos'
+		lineageTag: d469dc06-5f66-4d7b-a7c8-731c750ae788
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Tipo casos atendidos Orden'
+
+		relatedColumnDetails
+			groupByColumn: 'Tipo casos atendidos Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo casos atendidos Campos'
+		isHidden
+		lineageTag: 74f391bf-e373-437e-adc2-4ef6ca876560
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Tipo casos atendidos Orden'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo casos atendidos Orden'
+		isHidden
+		formatString: 0
+		lineageTag: 2d696ef9-6027-4e1e-996f-e00227a84662
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Tipo casos atendidos' = calculated
+		mode: import
+		source =
+				{
+				    ("Facultad", NAMEOF('DimCarrera'[Facultad]), 1),
+				    ("Responsable", NAMEOF('BBDD'[USUARIO ASIGNADO]), 2),
+				    ("Sede", NAMEOF('DimSede'[Sede]), 3)
+				}
+
+	annotation PBI_Id = 1cb715a8a7f04194b605949295b7898a
+

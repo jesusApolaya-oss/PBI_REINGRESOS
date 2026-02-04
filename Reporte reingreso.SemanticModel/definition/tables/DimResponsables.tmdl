@@ -1,0 +1,28 @@
+table DimResponsables
+	excludeFromModelRefresh
+	lineageTag: 87949a6e-26cb-49cb-87f6-9da0019a52c9
+
+	column Responsables
+		dataType: string
+		lineageTag: d3c55fe2-1755-4481-9314-2cf1fe9df423
+		summarizeBy: none
+		sourceColumn: Responsables
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimResponsables = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"ResponsablesReingreso xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/" = Origen{[Name="ResponsablesReingreso.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"ResponsablesReingreso xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"),
+				    DimResponsable_Table = #"Libro de Excel importado"{[Item="DimResponsable",Kind="Table"]}[Data],
+				    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(DimResponsable_Table,{{"Responsables", Text.Proper, type text}})
+				in
+				    #"Poner En Mayúsculas Cada Palabra"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

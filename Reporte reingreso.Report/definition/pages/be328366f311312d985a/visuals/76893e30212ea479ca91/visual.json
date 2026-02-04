@@ -1,0 +1,177 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "76893e30212ea479ca91",
+  "position": {
+    "x": 35.714285714285715,
+    "y": 1792.6416130235818,
+    "z": 7000,
+    "height": 205.71428571428572,
+    "width": 472.85714285714289,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "📥 "
+                  },
+                  {
+                    "value": "Inicio",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Fecha.Recep ajustada (si fuera de horario → siguiente día hábil 09:00)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🏢 "
+                  },
+                  {
+                    "value": "Horario laboral",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Lunes a Viernes 09:00 – 19:00"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "📆 "
+                  },
+                  {
+                    "value": "Duración",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " 3 días hábiles"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🚫 "
+                  },
+                  {
+                    "value": "No cuenta",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Sábados, domingos y feriados"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🟢 "
+                  },
+                  {
+                    "value": "DENTRO",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Cerrado dentro del plazo"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🔴 "
+                  },
+                  {
+                    "value": "FUERA",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Cerrado fuera del plazo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'🕒 CÁLCULO DEL SLA'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

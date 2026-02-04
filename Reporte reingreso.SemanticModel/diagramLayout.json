@@ -1,0 +1,285 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 425.4578030671525,
+            "y": 112.66027350564515
+          },
+          "nodeIndex": "BBDD",
+          "nodeLineageTag": "5aec6366-2d64-46a1-9672-3277b42e7a5e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 5,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "DimCarrera",
+          "nodeLineageTag": "9169f69b-c987-4f2e-b423-dccbac550149",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 401.47326600000014,
+            "y": 445.659659
+          },
+          "nodeIndex": "DimSede",
+          "nodeLineageTag": "98ff1795-f8cc-4bb0-b1ff-7fc57adef879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 224
+          },
+          "nodeIndex": "CalendarioFechaCreacion",
+          "nodeLineageTag": "9e064df1-2d77-49d1-b414-84af476a58b2",
+          "size": {
+            "height": 204,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 746.28836791650781,
+            "y": 23.701517228281585
+          },
+          "nodeIndex": "Conva",
+          "nodeLineageTag": "67cfe023-1694-43e2-b4f5-6aeb63eea256",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 1,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 80.963599071924364,
+            "y": 523.84316301843228
+          },
+          "nodeIndex": "Actualizacion",
+          "nodeLineageTag": "85a7f7d8-c630-420a-8ba2-6a50e3b4a077",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 913.9217782632013,
+            "y": 581.41514932173015
+          },
+          "nodeIndex": "EquiposReingreso",
+          "nodeLineageTag": "a34024dd-e499-4d60-8433-bc4f37963cd8",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 291.58564981301816,
+            "y": 683.45336096749736
+          },
+          "nodeIndex": "BBDD_Conva",
+          "nodeLineageTag": "a3892a7d-88eb-4044-9c22-6d15fcd3c1b5",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1089.1871641712451,
+            "y": 119.79331751530603
+          },
+          "nodeIndex": "CalendarioFechaModificacion",
+          "nodeLineageTag": "b8684484-fe01-4fc9-b595-c895be6004e3",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1273.9797481712451,
+            "y": 610.60302548374852
+          },
+          "nodeIndex": "Tipo casos atendidos",
+          "nodeLineageTag": "8fb10e75-c4bf-45fa-8973-73dd2d82cbc6",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 876.4166006008976,
+            "y": 314.30668885799844
+          },
+          "nodeIndex": "DimResponsables",
+          "nodeLineageTag": "87949a6e-26cb-49cb-87f6-9da0019a52c9",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1557.9797481712451,
+            "y": 329.72668048374868
+          },
+          "nodeIndex": "Medidas",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377769,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 953.52322613493163,
+            "y": 541.17593601335034
+          },
+          "nodeIndex": "Actualizacion",
+          "nodeLineageTag": "85a7f7d8-c630-420a-8ba2-6a50e3b4a077",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 470.57910673167453,
+            "y": 530.632103243382
+          },
+          "nodeIndex": "BBDD",
+          "nodeLineageTag": "5aec6366-2d64-46a1-9672-3277b42e7a5e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 367.17714563434095,
+            "y": 884.35187202670068
+          },
+          "nodeIndex": "CalendarioFechaCreacion",
+          "nodeLineageTag": "9e064df1-2d77-49d1-b414-84af476a58b2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 594.351659130674,
+            "y": -50
+          },
+          "nodeIndex": "Conva",
+          "nodeLineageTag": "67cfe023-1694-43e2-b4f5-6aeb63eea256",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 719.52322613493152,
+            "y": 882.66352700882044
+          },
+          "nodeIndex": "DimCarrera",
+          "nodeLineageTag": "9169f69b-c987-4f2e-b423-dccbac550149",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 335.50597164628937,
+            "y": 301.49513939527128
+          },
+          "nodeIndex": "DimSede",
+          "nodeLineageTag": "98ff1795-f8cc-4bb0-b1ff-7fc57adef879",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 227.83581011307024
+          },
+          "nodeIndex": "EquiposReingreso",
+          "nodeLineageTag": "a34024dd-e499-4d60-8433-bc4f37963cd8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Disposición 1",
+      "zoomValue": 44.665879555049919,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

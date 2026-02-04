@@ -1,0 +1,77 @@
+relationship 2d59912c-6dea-4c88-b25e-41ec113c02a4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: BBDD.'FECHA DEL TRÁMITE'
+	toColumn: LocalDateTable_1cd75f2d-8b4c-469b-94ac-f0f2593dfbf7.Date
+
+relationship AutoDetected_ba89c307-1985-4dd9-9eaf-8f480e4325c5
+	fromColumn: BBDD.'SEDE ESTUDIANTE'
+	toColumn: DimSede.'SEDE ESTUDIANTE'
+
+relationship AutoDetected_4f07d306-b4c1-4bcc-bb24-d6a257e3c965
+	fromColumn: BBDD.'ID CARRERA'
+	toColumn: DimCarrera.'ID CARRERA'
+
+relationship 5c678051-26e7-4ace-addc-0f666242ebf8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: BBDD.Fecha_Limite_SLA
+	toColumn: LocalDateTable_448ae65c-e4fc-483b-a67b-ab9c446cdef0.Date
+
+relationship 80c042e9-dbd8-82f6-2aff-ef9923f2a47b
+	fromColumn: BBDD.'FECHA CREACION'
+	toColumn: CalendarioFechaCreacion.Date
+
+relationship AutoDetected_0254dce4-f821-4e0d-b7f4-a3435f37fb12
+	fromColumn: Conva.'ID SEDE'
+	toColumn: DimSede.'ID SEDE'
+
+relationship f3beb2db-526a-4689-9a7a-0a16ea614584
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Conva.FechaNotificacionAcademia
+	toColumn: LocalDateTable_3d293561-65fb-46a6-8c0c-f174ef6aa845.Date
+
+relationship eaa8ada0-d559-40c1-bff6-5ff7bc1c13db
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Conva.Fecha_Limite_SLA
+	toColumn: LocalDateTable_c6756edd-6577-459b-adcc-fbb4caf10abd.Date
+
+relationship 691029c1-dc3d-490e-a8ed-e160aa035bc2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Conva.FechaCompletoConvalidacion
+	toColumn: LocalDateTable_1f895182-dae9-46b1-b82e-371cfbcc1e19.Date
+
+relationship ec473689-3797-4449-bc0d-964c3fdedfd3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Actualizacion.'Ultima actualización'
+	toColumn: LocalDateTable_46db60d3-d94b-4dd1-b9df-b1c6d3aa5ff3.Date
+
+relationship AutoDetected_b48328f4-77b5-450d-90ad-b8b342022d1a
+	crossFilteringBehavior: bothDirections
+	fromColumn: EquiposReingreso.'ID SEDE'
+	toColumn: DimSede.'ID SEDE'
+
+relationship ce10d798-2427-cb7e-ac82-9baf3bcc0f7c
+	fromColumn: BBDD.'FECHA MODIFICACION'
+	toColumn: CalendarioFechaModificacion.Date
+
+relationship 67b2809b-f63e-44cc-832b-f472df81f551
+	joinOnDateBehavior: datePartOnly
+	fromColumn: BBDD.Fecha_Modificación
+	toColumn: LocalDateTable_9b577007-c35a-41fa-abfe-226ce0cd071b.Date
+
+relationship dbdf7ced-4654-8c7f-da95-0f8634f89263
+	fromColumn: BBDD.'USUARIO ASIGNADO'
+	toColumn: DimResponsables.Responsables
+
+relationship 93d9a2ab-abbd-428d-baf0-1c228b83bad6
+	fromColumn: EquiposReingreso.Responsables
+	toColumn: DimResponsables.Responsables
+
+relationship 50ba5b6e-e74a-4afa-8fbe-70bd0af246d9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: BBDD.Column25
+	toColumn: LocalDateTable_fcea5036-825d-43c4-b045-513a8bc06af1.Date
+
+relationship AutoDetected_4cf87a48-6765-457d-87ca-653e6ad0e1c0
+	fromColumn: Conva.Carrera
+	toColumn: Grupos_Conva.Carrera
+

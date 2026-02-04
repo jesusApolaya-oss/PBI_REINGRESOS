@@ -1,0 +1,205 @@
+table EquiposReingreso
+	lineageTag: a34024dd-e499-4d60-8433-bc4f37963cd8
+
+	column 'ID SEDE'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b34e9cb-aa9a-426f-92e2-79257e3ae7b1
+		summarizeBy: none
+		sourceColumn: ID SEDE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo
+		dataType: string
+		lineageTag: 594a4ef2-c227-4ad3-8702-9397f2deef41
+		summarizeBy: none
+		sourceColumn: Grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carrera
+		dataType: string
+		lineageTag: 349ef02e-d3dd-4145-9fc7-c5a2efb87feb
+		summarizeBy: none
+		sourceColumn: Carrera
+
+		annotation SummarizationSetBy = Automatic
+
+	column Responsables
+		dataType: string
+		lineageTag: fb42819d-06f7-495b-9ff4-95a7355e9567
+		summarizeBy: none
+		sourceColumn: Responsables
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum Horas'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 98c08352-8bc2-4d3a-9ec7-ded2aafb6e3d
+		summarizeBy: none
+		sourceColumn: Sum Horas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Tiene Accesos'
+		dataType: string
+		lineageTag: 49354c76-a321-4e3f-9fb5-96698c5be23d
+		summarizeBy: none
+		sourceColumn: Tiene Accesos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Momento
+		dataType: double
+		lineageTag: ed1af3bd-25a1-4edb-ad16-f72e4d985842
+		summarizeBy: sum
+		sourceColumn: Momento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Atributo
+		dataType: string
+		lineageTag: be9bb464-029b-4460-9654-c1eac562675a
+		summarizeBy: none
+		sourceColumn: Atributo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valor
+		dataType: string
+		lineageTag: 0add49b1-5d26-46f4-84dd-882fe7effdea
+		summarizeBy: none
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia = ```
+			LEFT('EquiposReingreso'[Valor], 3)
+			
+			```
+		lineageTag: e7404df2-bc14-482f-8773-481fc5568657
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia_Ordenado = ```
+			
+			VAR Dia = LEFT('EquiposReingreso'[Valor], 3)
+			VAR Numero = 
+			    SWITCH(
+			        Dia,
+			        "Lun", 1,
+			        "Mar", 2,
+			        "Mie", 3,
+			        "Jue", 4,
+			        "Vie", 5,
+			        "Sab", 6,
+			        "Dom", 7
+			    )
+			RETURN
+			    Numero & ". " & Dia
+			
+			```
+		lineageTag: 26391f38-848b-4170-aec6-92b2e6cd08ab
+		summarizeBy: none
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EquiposReingreso = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"ResponsablesReingreso.xlsx_https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/" =
+				        Origen{[Name="ResponsablesReingreso.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"]}[Content],
+				    #"Libro de Excel importado" =
+				        Excel.Workbook(#"ResponsablesReingreso.xlsx_https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"),
+				    ResponsablesReingreso_Table = #"Libro de Excel importado"{[Item="ResponsablesReingreso",Kind="Table"]}[Data],
+				    #"Filas filtradas" = Table.SelectRows(ResponsablesReingreso_Table, each ([Responsables] <> null)),
+				
+				    #"Tipo cambiado" = Table.TransformColumnTypes(
+				        #"Filas filtradas",
+				        {
+				            {"Desde", type time}, {"Hasta", type time},
+				            {"Desde2", type time}, {"Hasta2", type time},
+				            {"Desde3", type time}, {"Hasta3", type time},
+				            {"Desde4", type time}, {"Hasta4", type time},
+				            {"Desde5", type time}, {"Hasta5", type time},
+				
+				            {"Desde6", type time}, {"Hasta6", type time},
+				            {"Desde7", type time}, {"Hasta7", type time},
+				
+				            {"Sum Horas", type time}
+				        }
+				    ),
+				
+				    #"Columnas combinadas" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Tipo cambiado", {{"Desde", type text}, {"Hasta", type text}}, "es-PE"),
+				        {"Dia", "Desde", "Hasta"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D1"
+				    ),
+				    #"Columnas combinadas1" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas", {{"Desde2", type text}, {"Hasta2", type text}}, "es-PE"),
+				        {"Dia2", "Desde2", "Hasta2"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D2"
+				    ),
+				    #"Columnas combinadas2" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas1", {{"Desde3", type text}, {"Hasta3", type text}}, "es-PE"),
+				        {"Dia3", "Desde3", "Hasta3"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D3"
+				    ),
+				    #"Columnas combinadas3" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas2", {{"Desde4", type text}, {"Hasta4", type text}}, "es-PE"),
+				        {"Dia4", "Desde4", "Hasta4"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D4"
+				    ),
+				    #"Columnas combinadas4" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas3", {{"Desde5", type text}, {"Hasta5", type text}}, "es-PE"),
+				        {"Dia5", "Desde5", "Hasta5"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D5"
+				    ),
+				    #"Columnas combinadas5" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas4", {{"Desde6", type text}, {"Hasta6", type text}}, "es-PE"),
+				        {"Dia6", "Desde6", "Hasta6"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D6"
+				    ),
+				    #"Columnas combinadas6" = Table.CombineColumns(
+				        Table.TransformColumnTypes(#"Columnas combinadas5", {{"Desde7", type text}, {"Hasta7", type text}}, "es-PE"),
+				        {"Dia7", "Desde7", "Hasta7"},
+				        Combiner.CombineTextByDelimiter("#(tab)", QuoteStyle.None),
+				        "D7"
+				    ),
+				
+				    #"Columna de anulación de dinamización" =
+				        Table.UnpivotOtherColumns(
+				            #"Columnas combinadas6",
+				            {"Grupo", "Carrera", "Responsables", "Sum Horas", "Tiene Accesos", "Momento"},
+				            "Atributo",
+				            "Valor"
+				        ),
+				
+				    #"Consultas combinadas" = Table.NestedJoin(#"Columna de anulación de dinamización", {"Grupo"}, DimSede, {"Sede"}, "DimSede", JoinKind.LeftOuter),
+				    #"Se expandió DimSede" = Table.ExpandTableColumn(#"Consultas combinadas", "DimSede", {"ID SEDE"}, {"ID SEDE"}),
+				    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(#"Se expandió DimSede",{{"Responsables", Text.Proper, type text}}),
+				    #"Filas filtradas1" = Table.SelectRows(#"Poner En Mayúsculas Cada Palabra", each ([Atributo] <> "Sale de Vacaciones / Reemplazo"))
+				in
+				    #"Filas filtradas1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

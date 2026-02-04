@@ -1,0 +1,52 @@
+table DimSede
+	lineageTag: 98ff1795-f8cc-4bb0-b1ff-7fc57adef879
+
+	column 'SEDE ESTUDIANTE'
+		dataType: string
+		lineageTag: 8f8cd3ae-2cb4-45f9-bfae-bd33e693accf
+		summarizeBy: none
+		sourceColumn: SEDE ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sede
+		dataType: string
+		lineageTag: 4a367181-7eb2-43f5-bc96-19c363183f59
+		summarizeBy: none
+		sourceColumn: Sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID SEDE'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1557291a-036a-45b8-b790-85b01813fb80
+		summarizeBy: none
+		sourceColumn: ID SEDE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sede Conva'
+		dataType: string
+		lineageTag: ddb54258-4f16-40b1-a010-f34406f36769
+		summarizeBy: none
+		sourceColumn: Sede Conva
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimSede = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"DimReingresos xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/" = Origen{[Name="DimReingresos.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"DimReingresos xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"),
+				    Sede_Table = #"Libro de Excel importado"{[Item="Sede",Kind="Table"]}[Data],
+				    #"Índice agregado" = Table.AddIndexColumn(Sede_Table, "ID SEDE", 1, 1, Int64.Type)
+				in
+				    #"Índice agregado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

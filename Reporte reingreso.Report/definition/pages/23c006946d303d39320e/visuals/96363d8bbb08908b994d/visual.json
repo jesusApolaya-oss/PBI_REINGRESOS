@@ -1,0 +1,337 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "96363d8bbb08908b994d",
+  "position": {
+    "x": 20,
+    "y": 203.75,
+    "z": 0,
+    "height": 495,
+    "width": 877.5,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCarrera"
+                    }
+                  },
+                  "Property": "Carreras"
+                }
+              },
+              "queryRef": "DimCarrera.Carreras",
+              "nativeQueryRef": "Carreras"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "USUARIO ASIGNADO"
+                }
+              },
+              "queryRef": "BBDD.USUARIO ASIGNADO",
+              "nativeQueryRef": "USUARIO ASIGNADO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "NRO TRÁMITE"
+                }
+              },
+              "queryRef": "BBDD.NRO TRÁMITE",
+              "nativeQueryRef": "NRO TRÁMITE"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "BBDD"
+                        }
+                      },
+                      "Property": "CODIGO ESTUDIANTE"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(BBDD.CODIGO ESTUDIANTE)",
+              "nativeQueryRef": "Recuento de CODIGO ESTUDIANTE",
+              "displayName": "Total"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "SLA"
+                }
+              },
+              "queryRef": "BBDD.SLA",
+              "nativeQueryRef": "SLA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "CODIGO ESTUDIANTE"
+                }
+              },
+              "queryRef": "BBDD.CODIGO ESTUDIANTE",
+              "nativeQueryRef": "CODIGO ESTUDIANTE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "FECHA CREACION"
+                }
+              },
+              "queryRef": "BBDD.FECHA CREACION",
+              "nativeQueryRef": "FECHA CREACION"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BBDD"
+                    }
+                  },
+                  "Property": "TRÁMITE"
+                }
+              },
+              "queryRef": "BBDD.TRÁMITE",
+              "nativeQueryRef": "TRÁMITE"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "BBDD"
+                      }
+                    },
+                    "Property": "CODIGO ESTUDIANTE"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "DimCarrera.Carreras"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "BBDD.USUARIO ASIGNADO"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "BBDD.NRO TRÁMITE"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "BBDD.CODIGO ESTUDIANTE"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "BBDD.SLA"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "CountNonNull(BBDD.CODIGO ESTUDIANTE)"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "BBDD"
+                                        }
+                                      },
+                                      "Property": "SLA"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Fuera'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E57373'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "BBDD"
+                                        }
+                                      },
+                                      "Property": "SLA"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'Dentro'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#8BC34A'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "BBDD.SLA"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

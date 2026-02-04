@@ -1,0 +1,526 @@
+table BBDD
+	lineageTag: 5aec6366-2d64-46a1-9672-3277b42e7a5e
+
+	column 'NRO TRÁMITE'
+		dataType: string
+		lineageTag: d5dc5f9b-3d88-48a4-904b-e219a83cdfad
+		summarizeBy: none
+		sourceColumn: NRO TRÁMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CODIGO ESTUDIANTE'
+		dataType: string
+		lineageTag: 06864a2f-c83e-4205-a1ec-9f42ee870810
+		summarizeBy: none
+		sourceColumn: CODIGO ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOMBRE ESTUDIANTE'
+		dataType: string
+		lineageTag: 16c3ead6-a625-46be-b36c-352fb0264549
+		summarizeBy: none
+		sourceColumn: NOMBRE ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SEDE ESTUDIANTE'
+		dataType: string
+		lineageTag: 263ca8ff-e0c2-469f-a0c1-e912f4f9ab93
+		summarizeBy: none
+		sourceColumn: SEDE ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARRERA ESTUDIANTE'
+		dataType: string
+		lineageTag: c6129478-cf71-490d-a4ec-8edacaf5130a
+		summarizeBy: none
+		sourceColumn: CARRERA ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column TRÁMITE
+		dataType: string
+		lineageTag: 72b36ece-3fbc-4717-9eeb-3d8321c7a254
+		summarizeBy: none
+		sourceColumn: TRÁMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEMESTRE
+		dataType: string
+		lineageTag: 4851e819-816e-4dab-849c-6d404d74ae0e
+		summarizeBy: none
+		sourceColumn: SEMESTRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SEDE TRASLADO'
+		dataType: string
+		lineageTag: be3f3717-fb9f-463a-a810-441d54962118
+		summarizeBy: none
+		sourceColumn: SEDE TRASLADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARRERA TRASLADO'
+		dataType: string
+		lineageTag: 5225749a-bc07-4709-93f7-6083f3404288
+		summarizeBy: none
+		sourceColumn: CARRERA TRASLADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RESPONSABLE TRÁMITE'
+		dataType: string
+		lineageTag: 80034078-f8c6-410a-bbbe-bc3d88f6b68b
+		summarizeBy: none
+		sourceColumn: RESPONSABLE TRÁMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FECHA DEL TRÁMITE'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9c892493-9987-4051-9387-34ac28c6b2f2
+		summarizeBy: none
+		sourceColumn: FECHA DEL TRÁMITE
+
+		variation Variación
+			isDefault
+			relationship: 2d59912c-6dea-4c88-b25e-41ec113c02a4
+			defaultHierarchy: LocalDateTable_1cd75f2d-8b4c-469b-94ac-f0f2593dfbf7.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ESTADO TRÁMITE'
+		dataType: string
+		lineageTag: 45fb53e4-fc1a-4cfa-afd2-a45a6d73d565
+		summarizeBy: none
+		sourceColumn: ESTADO TRÁMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NOMBRE ACTIVIDAD'
+		dataType: string
+		lineageTag: 9128368f-a151-441f-b265-ef916b3b96ca
+		summarizeBy: none
+		sourceColumn: NOMBRE ACTIVIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column AREA
+		dataType: string
+		lineageTag: 5b29f97c-076b-43ff-913c-a0be8abe8c30
+		summarizeBy: none
+		sourceColumn: AREA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMENTARIO
+		dataType: string
+		lineageTag: 9db5c829-d71f-4933-a943-f9f77adfefd8
+		summarizeBy: none
+		sourceColumn: COMENTARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ESTADO TAREA'
+		dataType: string
+		lineageTag: c0544df4-7a07-4379-97ad-0598f785e9dd
+		summarizeBy: none
+		sourceColumn: ESTADO TAREA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANULADO
+		dataType: string
+		lineageTag: a23b01a9-c4b8-41d0-92cf-59f37493ac27
+		summarizeBy: none
+		sourceColumn: ANULADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'USUARIO ORIGEN'
+		dataType: string
+		lineageTag: bb11de10-6ac0-459f-af27-e6c9346832c7
+		summarizeBy: none
+		sourceColumn: USUARIO ORIGEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'USUARIO ASIGNADO'
+		dataType: string
+		lineageTag: 4ad76f7f-2105-44cf-a883-cd5de0823a0b
+		summarizeBy: none
+		sourceColumn: USUARIO ASIGNADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'USUARIO CREACION'
+		dataType: string
+		lineageTag: 34de7532-b373-48b8-8c91-88a15d72476b
+		summarizeBy: none
+		sourceColumn: USUARIO CREACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FECHA CREACION'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b2362343-ccc9-4aeb-84cf-8cef02986ab7
+		summarizeBy: none
+		sourceColumn: FECHA CREACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'USUARIO MODIFICACION'
+		dataType: string
+		lineageTag: df7c519e-455a-4e85-8357-25bbc472f83b
+		summarizeBy: none
+		sourceColumn: USUARIO MODIFICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FECHA MODIFICACION'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d6be029a-3a48-4880-829a-f9befe45efad
+		summarizeBy: none
+		sourceColumn: FECHA MODIFICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TIEMPO TRANSCURRIDO'
+		dataType: string
+		lineageTag: 2baef634-49ec-4d55-9b4b-7ea019536a73
+		summarizeBy: none
+		sourceColumn: TIEMPO TRANSCURRIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID SEDE'
+		dataType: int64
+		formatString: 0
+		lineageTag: 69de395f-7f0f-4955-9240-03dd6f155d05
+		summarizeBy: sum
+		sourceColumn: ID SEDE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado Final' =
+			
+			IF(
+			    BBDD[ESTADO TRÁMITE] = "Rechazado",
+			    "Rechazado",
+			    BBDD[ESTADO TAREA]
+			)
+		lineageTag: 2fdb9ca9-2f56-477c-b61c-50ee0e8ddde5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Carrera Final'
+		dataType: string
+		lineageTag: 903a04ac-f5f3-4a41-861a-d0f29ba5e7f6
+		summarizeBy: none
+		sourceColumn: Carrera Final
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sede Final'
+		dataType: string
+		lineageTag: 3a6b4d5d-9380-4721-992d-20067007b90e
+		summarizeBy: none
+		sourceColumn: Sede Final
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID CARRERA'
+		dataType: int64
+		formatString: 0
+		lineageTag: ba7d2cd8-e477-4cde-8126-c4e77cde1f9b
+		summarizeBy: none
+		sourceColumn: ID CARRERA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Limite_SLA = ```
+			
+			VAR SLA_DiasHabiles = 3
+			VAR HoraCorte       = TIME(19,0,0)
+			VAR Feriados =
+			{
+			    DATE(2025,1,1),   DATE(2025,4,17), DATE(2025,4,18),
+			    DATE(2025,5,1),   DATE(2025,6,29), DATE(2025,7,28),
+			    DATE(2025,7,29),  DATE(2025,8,30), DATE(2025,10,8),
+			    DATE(2025,11,1),  DATE(2025,12,8), DATE(2025,12,9),
+			    DATE(2025,12,25), 
+			    DATE(2026,1,1),   -- Año Nuevo
+			    DATE(2026,4,2),   -- Jueves Santo
+			    DATE(2026,4,3),   -- Viernes Santo
+			    DATE(2026,5,1),   -- Día del Trabajo
+			    DATE(2026,6,7),   -- Batalla de Arica y Día de la Bandera
+			    DATE(2026,6,29),  -- San Pedro y San Pablo
+			    DATE(2026,7,23),  -- Día de la Fuerza Aérea del Perú
+			    DATE(2026,7,28),  -- Fiestas Patrias
+			    DATE(2026,7,29),  -- Fiestas Patrias
+			    DATE(2026,8,6),   -- Batalla de Junín
+			    DATE(2026,8,30),  -- Santa Rosa de Lima
+			    DATE(2026,10,8),  -- Combate de Angamos
+			    DATE(2026,11,1),  -- Todos los Santos
+			    DATE(2026,12,8),  -- Inmaculada Concepción
+			    DATE(2026,12,9),  -- Batalla de Ayacucho
+			    DATE(2026,12,25)  -- Navidad
+			}
+			/* ========= fecha/hora base ========= */
+			VAR _dtBase    = BBDD[FECHA CREACION]
+			VAR _tieneBase = NOT ISBLANK(_dtBase)
+			RETURN
+			IF (
+			    NOT _tieneBase,
+			    BLANK(),
+			    VAR _fechaBase = DATEVALUE(_dtBase)
+			    VAR _horaRaw   = TIMEVALUE(_dtBase)
+			
+			    /* primer día hábil >= fechaBase */
+			    VAR _inicioHabil =
+			        MINX (
+			            FILTER (
+			                ADDCOLUMNS (
+			                    CALENDAR ( _fechaBase, _fechaBase + 60 ),
+			                    "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                    "EsFeriado", [Date] IN Feriados
+			                ),
+			                [Date] >= _fechaBase && [EsFinde] = FALSE && [EsFeriado] = FALSE
+			            ),
+			            [Date]
+			        )
+			
+			    /* si llega >= 19:00, arrancar al siguiente día hábil a la misma hora */
+			    VAR _inicioFinalDT =
+			        IF (
+			            _horaRaw >= HoraCorte,
+			            MINX (
+			                FILTER (
+			                    ADDCOLUMNS (
+			                        CALENDAR ( _inicioHabil + 1, _inicioHabil + 60 ),
+			                        "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                        "EsFeriado", [Date] IN Feriados
+			                    ),
+			                    [EsFinde] = FALSE && [EsFeriado] = FALSE
+			                ),
+			                [Date]
+			            ) + _horaRaw,
+			            _inicioHabil + _horaRaw
+			        )
+			
+			    /* sumar 3 días hábiles */
+			    VAR _startDate = DATEVALUE ( _inicioFinalDT )
+			    VAR _startTime = TIMEVALUE ( _inicioFinalDT )
+			
+			    VAR _habilesBase =
+			        FILTER (
+			            ADDCOLUMNS (
+			                CALENDAR ( _startDate, _startDate + 60 ),
+			                "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                "EsFeriado", [Date] IN Feriados
+			            ),
+			            [EsFinde] = FALSE && [EsFeriado] = FALSE
+			        )
+			
+			    VAR _indexados =
+			        ADDCOLUMNS (
+			            _habilesBase,
+			            "idx",
+			                VAR d = [Date]
+			                RETURN COUNTROWS ( FILTER ( _habilesBase, [Date] <= d ) ) - 1
+			        )
+			
+			    VAR _fechaLimite =
+			        MINX ( FILTER ( _indexados, [idx] = SLA_DiasHabiles ), [Date] )
+			
+			    RETURN _fechaLimite + _startTime
+			)
+			
+			```
+		formatString: General Date
+		lineageTag: 7bfc8082-e167-47f1-b49f-d12249f8488b
+		summarizeBy: none
+
+		variation Variación
+			isDefault
+			relationship: 5c678051-26e7-4ace-addc-0f666242ebf8
+			defaultHierarchy: LocalDateTable_448ae65c-e4fc-483b-a67b-ab9c446cdef0.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column SLA = ```
+			
+			VAR limite = BBDD[Fecha_Limite_SLA]
+			VAR referencia = NOW()
+			RETURN
+			IF(
+			    ISBLANK(limite),
+			    BLANK(),
+			    IF( referencia <= limite, "Dentro", "Fuera" )
+			)
+			
+			```
+		lineageTag: 4532f54e-270e-4bba-b4bc-dcd0c343f640
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumSem = ```
+			
+			VAR _fecha  = BBDD[FECHA MODIFICACION]
+			VAR _anio   = YEAR(_fecha)
+			VAR _semana = WEEKNUM(_fecha, 2)   -- Semana inicia lunes
+			RETURN
+			IF(
+			    ISBLANK(_fecha),
+			    BLANK(),
+			    FORMAT(_anio, "0000") & "-S" & FORMAT(_semana, "00")
+			)
+			
+			```
+		lineageTag: 9a05d836-7f15-4f6d-a95a-2a347e4c86ca
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 61a93d95-0250-4c9a-a9dd-6c1f2b9bcb49
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Est_prev
+		dataType: string
+		lineageTag: a385d346-5f46-422a-8f9e-91c22a9eafb5
+		summarizeBy: none
+		sourceColumn: Est_prev
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Modificación = ```
+			DATEVALUE ( BBDD[FECHA MODIFICACION] )
+			
+			```
+		formatString: Short Date
+		lineageTag: 76feb5df-2c61-44cd-a573-c4f9b457d7e3
+		summarizeBy: none
+
+		variation Variación
+			isDefault
+			relationship: 67b2809b-f63e-44cc-832b-f472df81f551
+			defaultHierarchy: LocalDateTable_9b577007-c35a-41fa-abfe-226ce0cd071b.'Jerarquía de fechas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Fecha_ModificaciónNomDia =
+			
+			VAR _fecha = BBDD[FECHA MODIFICACION]
+			RETURN
+			IF(
+			    ISBLANK(_fecha),
+			    BLANK(),
+			    FORMAT(_fecha, "ddd dd/MM/yy")
+			)
+		lineageTag: 7ff2b71c-d288-4901-8232-f4394d33fa2c
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Column25
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f57986a3-bf58-4c84-a2ab-221e3eb3b46d
+		summarizeBy: none
+		sourceColumn: Column25
+
+		variation Variación
+			isDefault
+			relationship: 50ba5b6e-e74a-4afa-8fbe-70bd0af246d9
+			defaultHierarchy: LocalDateTable_fcea5036-825d-43c4-b045-513a8bc06af1.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Tipo_Tramite = ```
+			
+			SWITCH(
+			    TRUE(),
+			    BBDD[TRÁMITE] = "Reingreso", "Sede",
+			    BBDD[TRÁMITE] = "Reingreso - Cambio de Modalidad", "Sede",
+			    "Grupo de convalidación"
+			)
+			
+			```
+		lineageTag: 3d1db87d-44f1-429d-ad46-4366f2c71b48
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition BBDD = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"Reingreso xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/" = Origen{[Name="Reingreso.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"Reingreso xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"),
+				    Autorizaciones_Sheet = #"Libro de Excel importado"{[Item="Autorizaciones",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Autorizaciones_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado con configuración regional" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"FECHA DEL TRÁMITE", type datetime}}, "es-PE"),
+				    #"Tipo cambiado con configuración regional1" = Table.TransformColumnTypes(#"Tipo cambiado con configuración regional", {{"FECHA CREACION", type datetime}}, "es-PE"),
+				    #"Tipo cambiado con configuración regional2" = Table.TransformColumnTypes(#"Tipo cambiado con configuración regional1", {{"FECHA MODIFICACION", type datetime}}, "es-PE"),
+				    #"Personalizada agregada" = Table.AddColumn(#"Tipo cambiado con configuración regional2", "Carrera Final", each let
+				    raw = [CARRERA TRASLADO],
+				    rawClean = if raw = null then "" else Text.Trim( Text.Replace( Text.From(raw), Character.FromNumber(160), " " ) ),
+				    esVacioRaw = (raw = null) or (rawClean = ""),
+				    alt = [CARRERA ESTUDIANTE],
+				    altClean = if alt = null then "" else Text.Trim( Text.Replace( Text.From(alt), Character.FromNumber(160), " " ) )
+				in
+				    if esVacioRaw then
+				        if (alt = null) or (altClean = "") then null else alt
+				    else
+				        raw),
+				    #"Personalizada agregada1" = Table.AddColumn(#"Personalizada agregada", "Sede Final", each let
+				    raw = [SEDE TRASLADO],
+				    rawClean = if raw = null then "" else Text.Trim( Text.Replace( Text.From(raw), Character.FromNumber(160), " " ) ),
+				    esVacioRaw = (raw = null) or (rawClean = ""),
+				    alt = [SEDE ESTUDIANTE],
+				    altClean = if alt = null then "" else Text.Trim( Text.Replace( Text.From(alt), Character.FromNumber(160), " " ) )
+				in
+				    if esVacioRaw then
+				        if (alt = null) or (altClean = "") then null else alt
+				    else
+				        raw),
+				    #"Consultas combinadas" = Table.NestedJoin(#"Personalizada agregada1", {"Carrera Final"}, DimCarrera, {"Carreras"}, "DimCarrera", JoinKind.LeftOuter),
+				    #"Se expandió DimCarrera" = Table.ExpandTableColumn(#"Consultas combinadas", "DimCarrera", {"ID CARRERA"}, {"ID CARRERA"}),
+				    #"Consultas combinadas1" = Table.NestedJoin(#"Se expandió DimCarrera", {"Sede Final"}, DimSede, {"SEDE ESTUDIANTE"}, "DimSede", JoinKind.LeftOuter),
+				    #"Se expandió DimSede" = Table.ExpandTableColumn(#"Consultas combinadas1", "DimSede", {"ID SEDE"}, {"ID SEDE"}),
+				    #"Personalizada agregada2" = Table.AddColumn(#"Se expandió DimSede", "Tipo", each "Regular"),
+				    #"Personalizada agregada3" = Table.AddColumn(#"Personalizada agregada2", "Est_prev", each if [ESTADO TRÁMITE] = "Rechazado" then "Rechazado" else [ESTADO TAREA]),
+				    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(#"Personalizada agregada3",{{"USUARIO ASIGNADO", Text.Proper, type text}})
+				in
+				    #"Poner En Mayúsculas Cada Palabra"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "8a1e612e0083e5b328ec",
+  "position": {
+    "x": 1072,
+    "y": 144,
+    "z": 7000,
+    "height": 64,
+    "width": 191.99999999999997,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "EquiposReingreso"
+                    }
+                  },
+                  "Property": "Dia_Ordenado"
+                }
+              },
+              "queryRef": "EquiposReingreso.Dia_Ordenado",
+              "nativeQueryRef": "Día",
+              "active": true,
+              "displayName": "Día"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

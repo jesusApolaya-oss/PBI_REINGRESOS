@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "56f73dd78d322abe37cc",
+  "position": {
+    "x": 17.5,
+    "y": 186.25,
+    "z": 3000,
+    "height": 516.25,
+    "width": 1246.25,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "Carrera"
+                }
+              },
+              "queryRef": "Conva.Carrera",
+              "nativeQueryRef": "Carrera"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimSede"
+                    }
+                  },
+                  "Property": "Sede"
+                }
+              },
+              "queryRef": "DimSede.Sede",
+              "nativeQueryRef": "Sede"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "Codigo"
+                }
+              },
+              "queryRef": "Conva.Codigo",
+              "nativeQueryRef": "Código",
+              "displayName": "Código"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "NombreCompletoEstudiante"
+                }
+              },
+              "queryRef": "Conva.NombreCompletoEstudiante",
+              "nativeQueryRef": "NombreCompletoEstudiante"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "ModalidadIngreso"
+                }
+              },
+              "queryRef": "Conva.ModalidadIngreso",
+              "nativeQueryRef": "Modalidad Ingreso",
+              "displayName": "Modalidad Ingreso"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Conva"
+                        }
+                      },
+                      "Property": "Codigo"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "CountNonNull(Conva.Codigo)",
+              "nativeQueryRef": "Recuento de Codigo",
+              "displayName": "Q"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "ConsejeroAdmision"
+                }
+              },
+              "queryRef": "Conva.ConsejeroAdmision",
+              "nativeQueryRef": "Consejero Admisión",
+              "displayName": "Consejero Admisión"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "ConvalidacionPaquete"
+                }
+              },
+              "queryRef": "Conva.ConvalidacionPaquete",
+              "nativeQueryRef": "Tipo Paquete",
+              "displayName": "Tipo Paquete"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Conva"
+                    }
+                  },
+                  "Property": "SLA_OFI"
+                }
+              },
+              "queryRef": "Conva.SLA_OFI",
+              "nativeQueryRef": "SLA",
+              "displayName": "SLA"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "Conva"
+                                        }
+                                      },
+                                      "Property": "SLA_OFI"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'DENTRO'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E57373'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "Conva"
+                                        }
+                                      },
+                                      "Property": "SLA_OFI"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'FUERA'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#8BC34A'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Conva.SLA_OFI"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "365.8571263924177D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Conva.Carrera"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

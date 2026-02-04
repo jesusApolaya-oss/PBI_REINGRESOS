@@ -1,0 +1,77 @@
+table Grupos_Conva
+	excludeFromModelRefresh
+	lineageTag: 3c9a0add-2d71-4f5b-9fd7-c711e5b4a260
+
+	column Carrera
+		dataType: string
+		lineageTag: 6b1ff5b2-42e2-466d-9bc8-7b0b799852a4
+		summarizeBy: none
+		sourceColumn: Carrera
+
+		annotation SummarizationSetBy = Automatic
+
+	column FACU
+		dataType: string
+		lineageTag: a044a02a-dd3a-4c19-a79d-c5963c878463
+		summarizeBy: none
+		sourceColumn: FACU
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo
+		dataType: string
+		lineageTag: 9b860f13-d096-4b0d-9ac1-43e44aa5318e
+		summarizeBy: none
+		sourceColumn: Grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Responsable
+		dataType: string
+		lineageTag: 25aa4a19-bf20-4dce-bf9b-0bc2ab1338ba
+		summarizeBy: none
+		sourceColumn: Responsable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Carrera Sin WS'
+		dataType: string
+		lineageTag: 044754f7-c7ff-4b18-a05e-9de29e9f9f01
+		summarizeBy: none
+		sourceColumn: Carrera Sin WS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Carrera abrv'
+		dataType: string
+		lineageTag: 394f2455-e7d8-410d-bbf2-fa0bd6ae63d0
+		summarizeBy: none
+		sourceColumn: Carrera abrv
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Id Grupos_Conva'
+		dataType: int64
+		formatString: 0
+		lineageTag: d922f8db-a6d3-4805-9d2f-1ec39f5d568c
+		summarizeBy: none
+		sourceColumn: Id Grupos_Conva
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Grupos_Conva = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"DimConvalidaciones xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/" = Origen{[Name="DimConvalidaciones.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"DimConvalidaciones xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"),
+				    dim_Carrera_Table = #"Libro de Excel importado"{[Item="dim_Carrera",Kind="Table"]}[Data],
+				    #"Índice agregado" = Table.AddIndexColumn(dim_Carrera_Table, "Id Grupos_Conva", 1, 1, Int64.Type)
+				in
+				    #"Índice agregado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

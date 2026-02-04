@@ -1,0 +1,48 @@
+table Actualizacion
+	lineageTag: 85a7f7d8-c630-420a-8ba2-6a50e3b4a077
+
+	measure 'Fecha última actualización' =
+			
+			SELECTEDVALUE('Actualizacion'[Ultima actualización])
+		formatString: Long Date
+		displayFolder: Actualizacion
+		lineageTag: 7c916abf-7d9f-495d-baff-66d7da310e8a
+
+	measure 'Hora última actualización' =
+			
+			SELECTEDVALUE('Actualizacion'[Ultima actualización])
+		formatString: hh:nn:ss
+		displayFolder: Actualizacion
+		lineageTag: 3df24c1f-f72f-427e-8423-90b6f5623576
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Ultima actualización'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 323b40f5-44ae-4000-8314-c31ecb87944f
+		summarizeBy: none
+		sourceColumn: Ultima actualización
+
+		variation Variación
+			isDefault
+			relationship: ec473689-3797-4449-bc0d-964c3fdedfd3
+			defaultHierarchy: LocalDateTable_46db60d3-d94b-4dd1-b9df-b1c6d3aa5ff3.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Actualizacion = m
+		mode: import
+		source =
+				let
+				    Origen = DateTimeZone.SwitchZone(DateTimeZone.UtcNow(), -5),
+				    #"Convertida en tabla" = #table(1, {{Origen}}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Convertida en tabla",{{"Column1", type datetimezone}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Column1", "Ultima actualización"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

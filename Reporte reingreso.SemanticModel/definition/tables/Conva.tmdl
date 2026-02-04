@@ -1,0 +1,425 @@
+table Conva
+	lineageTag: 67cfe023-1694-43e2-b4f5-6aeb63eea256
+
+	column Column1
+		dataType: double
+		lineageTag: e70d416f-60d2-4669-83eb-265aa9d157b0
+		summarizeBy: sum
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sede
+		dataType: string
+		lineageTag: 23b1a90d-ba22-4770-b337-facebc6f82c6
+		summarizeBy: none
+		sourceColumn: Sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column ConsejeroAdmision
+		dataType: string
+		lineageTag: 6e55a40b-a80c-4fa4-a971-257815d524ec
+		summarizeBy: none
+		sourceColumn: ConsejeroAdmision
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstudianteEntregoDocumentosParaConvalidacion
+		dataType: string
+		lineageTag: 1bb40c6e-aa86-4fa4-9958-fca987ea63bd
+		summarizeBy: none
+		sourceColumn: EstudianteEntregoDocumentosParaConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaNotificacionAcademia
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ecffcd00-691c-43a5-8c4f-85cd81571177
+		summarizeBy: none
+		sourceColumn: FechaNotificacionAcademia
+
+		variation Variación
+			isDefault
+			relationship: f3beb2db-526a-4689-9a7a-0a16ea614584
+			defaultHierarchy: LocalDateTable_3d293561-65fb-46a6-8c0c-f174ef6aa845.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carrera
+		dataType: string
+		lineageTag: 03429ab1-2302-41b4-baf4-5093de511b83
+		summarizeBy: none
+		sourceColumn: Carrera
+
+		annotation SummarizationSetBy = Automatic
+
+	column Programa
+		dataType: string
+		lineageTag: c9701054-12ae-4254-b312-01f6b8c5b514
+		summarizeBy: none
+		sourceColumn: Programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Campania
+		dataType: string
+		lineageTag: 2ed9f867-fb1f-4af9-9807-0fdfa8704b77
+		summarizeBy: none
+		sourceColumn: Campania
+
+		annotation SummarizationSetBy = Automatic
+
+	column Codigo
+		dataType: string
+		lineageTag: 4eb95060-d419-4827-99f5-383d511dc870
+		summarizeBy: none
+		sourceColumn: Codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoPaterno
+		dataType: string
+		lineageTag: 04599b1f-a59a-4a7b-8004-a93ca955d31a
+		summarizeBy: none
+		sourceColumn: ApellidoPaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoMaterno
+		dataType: string
+		lineageTag: fcad3253-20b2-436b-9c71-0cf184c4c6ba
+		summarizeBy: none
+		sourceColumn: ApellidoMaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombres
+		dataType: string
+		lineageTag: 8a019dbb-407a-4137-9cdf-97f571fee761
+		summarizeBy: none
+		sourceColumn: Nombres
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModalidadIngreso
+		dataType: string
+		lineageTag: d5d45d01-d112-489c-aed4-288cf8da7cb8
+		summarizeBy: none
+		sourceColumn: ModalidadIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubModalidadIngreso
+		dataType: string
+		lineageTag: 14e27e94-53c6-490a-afac-08e2f1d01239
+		summarizeBy: none
+		sourceColumn: SubModalidadIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstadoConvalidacion
+		dataType: string
+		lineageTag: 6fdd6598-eb93-4994-b316-7d9439f28e75
+		summarizeBy: none
+		sourceColumn: EstadoConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaCompletoConvalidacion
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 43b93034-2c5f-4afb-9598-4bf4836b76e4
+		summarizeBy: none
+		sourceColumn: FechaCompletoConvalidacion
+
+		variation Variación
+			isDefault
+			relationship: 691029c1-dc3d-490e-a8ed-e160aa035bc2
+			defaultHierarchy: LocalDateTable_1f895182-dae9-46b1-b82e-371cfbcc1e19.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResponsableConvalidacion
+		dataType: string
+		lineageTag: c8a43e61-ba9f-4cba-8bf0-64e9c1dcf5fb
+		summarizeBy: none
+		sourceColumn: ResponsableConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column UltimoEstadoRevisionDocumento
+		dataType: string
+		lineageTag: f61cf1b7-f783-434d-a1cd-f8d076e21ce7
+		summarizeBy: none
+		sourceColumn: UltimoEstadoRevisionDocumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column InstitucionConvalidacion
+		dataType: string
+		lineageTag: 2e2ae596-fff1-4253-a912-e9eafe1807f7
+		summarizeBy: none
+		sourceColumn: InstitucionConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column VersionCRM
+		dataType: string
+		lineageTag: 2e0015da-e81f-4598-8898-fdd393db70a4
+		summarizeBy: none
+		sourceColumn: VersionCRM
+
+		annotation SummarizationSetBy = Automatic
+
+	column TieneConvalidacion
+		dataType: string
+		lineageTag: 29a574cf-2669-4270-a538-734b045cf735
+		summarizeBy: none
+		sourceColumn: TieneConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column ConvalidacionPaquete
+		dataType: string
+		lineageTag: f7c440c2-8957-4ceb-81e4-2040d556e76f
+		summarizeBy: none
+		sourceColumn: ConvalidacionPaquete
+
+		annotation SummarizationSetBy = Automatic
+
+	column Est_prev
+		dataType: string
+		lineageTag: 3759d629-353a-435f-9253-1a83de8a5276
+		summarizeBy: none
+		sourceColumn: Est_prev
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID SEDE'
+		dataType: int64
+		formatString: 0
+		lineageTag: df260034-eef6-48cd-94e3-f7db480c6bf8
+		summarizeBy: none
+		sourceColumn: ID SEDE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreCompletoEstudiante = ```
+			
+			Conva[ApellidoPaterno] & " " & Conva[ApellidoMaterno] & ", " & Conva[Nombres]
+			
+			```
+		lineageTag: e31ab11b-b622-4f22-9a7c-3ba7ad9f372e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sem =
+			
+			VAR _Semana = WEEKNUM(Conva[FechaNotificacionAcademia], 2)  // 2 = la semana empieza en lunes
+			RETURN
+			"S" & FORMAT(_Semana, "00")
+		lineageTag: fcfbd849-5c60-4ba7-989b-c39f1099cf3e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Limite_SLA = ```
+			
+			VAR SLA_DiasHabiles = 3
+			VAR HoraCorte       = TIME(19,0,0)  -- única hora de control
+			VAR Feriados =
+			{
+			    DATE(2025,1,1),   -- Año Nuevo
+			    DATE(2025,4,17),  -- Jueves Santo
+			    DATE(2025,4,18),  -- Viernes Santo
+			    DATE(2025,5,1),   -- Día del Trabajo
+			    DATE(2025,6,29),  -- San Pedro y San Pablo
+			    DATE(2025,7,28),  -- Fiestas Patrias
+			    DATE(2025,7,29),  -- Fiestas Patrias
+			    DATE(2025,8,30),  -- Santa Rosa de Lima
+			    DATE(2025,10,8),  -- Combate de Angamos
+			    DATE(2025,11,1),  -- Todos los Santos
+			    DATE(2025,12,8),  -- Inmaculada Concepción
+			    DATE(2025,12,9),  -- Batalla de Ayacucho
+			    DATE(2025,12,25)  -- Navidad
+			}
+			VAR _dtRecep    = Conva[FechaNotificacionAcademia]
+			VAR _tieneRecep = NOT ISBLANK(_dtRecep)
+			RETURN
+			IF (
+			    NOT _tieneRecep,
+			    BLANK(),
+			    VAR _fechaBase = DATEVALUE(_dtRecep)
+			    VAR _horaRaw   = TIMEVALUE(_dtRecep)
+			
+			    /* Primer día hábil >= fechaBase */
+			    VAR _inicioHabil =
+			        MINX (
+			            FILTER (
+			                ADDCOLUMNS (
+			                    CALENDAR ( _fechaBase, _fechaBase + 60 ),
+			                    "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                    "EsFeriado", [Date] IN Feriados
+			                ),
+			                [Date] >= _fechaBase && [EsFinde] = FALSE && [EsFeriado] = FALSE
+			            ),
+			            [Date]
+			        )
+			
+			    /*
+			        Si la hora de recepción es >= HoraCorte,
+			        arrancamos al siguiente día hábil (misma hora de recepción).
+			        (No se usa HoraInicioLaboral ni HoraReinicio)
+			    */
+			    VAR _inicioFinalDT =
+			        IF (
+			            _horaRaw >= HoraCorte,
+			            MINX (
+			                FILTER (
+			                    ADDCOLUMNS (
+			                        CALENDAR ( _inicioHabil + 1, _inicioHabil + 60 ),
+			                        "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                        "EsFeriado", [Date] IN Feriados
+			                    ),
+			                    [EsFinde] = FALSE && [EsFeriado] = FALSE
+			                ),
+			                [Date]
+			            ) + _horaRaw,
+			            _inicioHabil + _horaRaw
+			        )
+			
+			    /* Sumar 3 días hábiles desde el inicio válido */
+			    VAR _startDate = DATEVALUE ( _inicioFinalDT )
+			    VAR _startTime = TIMEVALUE ( _inicioFinalDT )
+			
+			    VAR _habilesBase =
+			        FILTER (
+			            ADDCOLUMNS (
+			                CALENDAR ( _startDate, _startDate + 60 ),
+			                "EsFinde",   WEEKDAY ( [Date], 2 ) >= 6,
+			                "EsFeriado", [Date] IN Feriados
+			            ),
+			            [EsFinde] = FALSE && [EsFeriado] = FALSE
+			        )
+			
+			    VAR _indexados =
+			        ADDCOLUMNS (
+			            _habilesBase,
+			            "idx",
+			                VAR d = [Date]
+			                RETURN COUNTROWS ( FILTER ( _habilesBase, [Date] <= d ) ) - 1
+			        )
+			
+			    VAR _fechaLimite =
+			        MINX ( FILTER ( _indexados, [idx] = SLA_DiasHabiles ), [Date] )
+			
+			    RETURN _fechaLimite + _startTime
+			)
+			
+			```
+		formatString: General Date
+		lineageTag: cec085d4-81e2-44a8-9836-8086ebbb8968
+		summarizeBy: none
+
+		variation Variación
+			isDefault
+			relationship: eaa8ada0-d559-40c1-bff6-5ff7bc1c13db
+			defaultHierarchy: LocalDateTable_c6756edd-6577-459b-adcc-fbb4caf10abd.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column SLA_OFI =
+			
+			VAR limite = Conva[Fecha_Limite_SLA]
+			VAR cierre = Conva[FechaCompletoConvalidacion]
+			VAR referencia = IF( NOT ISBLANK(cierre), cierre, NOW() )
+			RETURN IF( ISBLANK(limite), BLANK(), IF( referencia <= limite, "DENTRO", "FUERA" ) )
+		lineageTag: 3368d822-f83f-4a5d-b8d1-f1c7474bee18
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 02bae1e0-809e-4414-b9f2-8d9936c979dc
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Id Grupos_Conva'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bfcac27-2de8-4734-9746-f4dfec037c34
+		summarizeBy: sum
+		sourceColumn: Id Grupos_Conva
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Conva = m
+		mode: import
+		source = ```
+				let
+				    Origen = Conex,
+				    #"Conva xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/" = 
+				        Origen{[Name="Conva.xlsx", #"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"]}[Content],
+				    #"Libro de Excel importado" = 
+				        Excel.Workbook(#"Conva xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"),
+				    Sheet1_Sheet = #"Libro de Excel importado"{[Item="Sheet1", Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				
+				    // 🔹 Agregar columna Est_prev
+				    #"Columna Est_prev agregada" = Table.AddColumn(
+				        #"Encabezados promovidos",
+				        "Est_prev",
+				        each 
+				            let
+				                modalidad = [ModalidadIngreso],
+				                entrega = [EstudianteEntregoDocumentosParaConvalidacion],
+				                convPaq = [ConvalidacionPaquete],
+				                estadoConv = [EstadoConvalidacion],
+				
+				                esEgresadoUPN = 
+				                    modalidad <> null and Text.Start(modalidad, 12) = "EGRESADO UPN",
+				
+				                entregaEsSI = entrega = "SI",
+				                convPaqValido = convPaq <> null and convPaq <> "No aplica",
+				                estadoPendiente = estadoConv = "Pendiente",
+				
+				                resultado =
+				                    if modalidad = null then
+				                        null
+				                    else if esEgresadoUPN and entregaEsSI then
+				                        "Egresado"
+				                    else if entregaEsSI and convPaqValido and estadoPendiente then
+				                        "Paquete"
+				                    else
+				                        null
+				            in
+				                if resultado = null then "Regular" else resultado,
+				        type text
+				    ),
+				    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(#"Columna Est_prev agregada",{{"Sede", Text.Proper, type text}}),
+				    #"Consultas combinadas" = Table.NestedJoin(#"Poner En Mayúsculas Cada Palabra", {"Sede"}, DimSede, {"Sede Conva"}, "DimSede", JoinKind.LeftOuter),
+				    #"Se expandió DimSede" = Table.ExpandTableColumn(#"Consultas combinadas", "DimSede", {"ID SEDE"}, {"ID SEDE"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Se expandió DimSede", each ([Campania] = "2026-01 PG" or [Campania] = "2026-01 WA")),
+				    #"Tipo cambiado con configuración regional" = Table.TransformColumnTypes(#"Filas filtradas", {{"FechaNotificacionAcademia", type datetimezone}}, "es-PE"),
+				    #"Tipo cambiado con configuración regional1" = Table.TransformColumnTypes(#"Tipo cambiado con configuración regional", {{"FechaCompletoConvalidacion", type datetimezone}}, "es-PE"),
+				    #"Filas ordenadas" = Table.Sort(#"Tipo cambiado con configuración regional1",{{"FechaNotificacionAcademia", Order.Descending}}),
+				    #"Personalizada agregada" = Table.AddColumn(#"Filas ordenadas", "Tipo", each "Egresado"),
+				    #"Duplicados quitados" = Table.Distinct(#"Personalizada agregada", {"Codigo"}),
+				    #"Consultas combinadas1" = Table.NestedJoin(#"Duplicados quitados", {"Carrera"}, Grupos_Conva, {"Carrera"}, "Grupos_Conva", JoinKind.LeftOuter),
+				    #"Se expandió Grupos_Conva" = Table.ExpandTableColumn(#"Consultas combinadas1", "Grupos_Conva", {"Id Grupos_Conva"}, {"Id Grupos_Conva"})
+				in
+				    #"Se expandió Grupos_Conva"
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

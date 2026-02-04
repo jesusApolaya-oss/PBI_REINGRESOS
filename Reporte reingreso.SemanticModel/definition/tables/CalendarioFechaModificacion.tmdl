@@ -1,0 +1,187 @@
+table CalendarioFechaModificacion
+	lineageTag: b8684484-fe01-4fc9-b595-c895be6004e3
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: cd28ac53-44b1-49b3-bfe5-721fbc398c59
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaSK
+		lineageTag: ebcb72cb-5c55-4166-8af2-0541b2dd388d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [FechaSK]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: 18037921-079f-4c4f-8681-2bafd4308d34
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column #Trimestre
+		formatString: 0
+		lineageTag: 6aafa717-f5fa-40c4-809e-331af385479d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [#Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column #Mes
+		formatString: 0
+		lineageTag: 4bd9dbcd-7225-4bfd-96f3-a40e4a6abf42
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [#Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column #Día
+		formatString: 0
+		lineageTag: 7b55fec2-73c4-4e6e-a0c6-542af4884d7b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [#Día]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: b72d1bb9-b9a0-4386-a4ee-735be142f17f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: 133a3326-371d-4320-be73-b45bdcb5fc12
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesCorto
+		lineageTag: e1a5e7dd-f388-4c69-a11b-7aa9abf06486
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MesCorto]
+
+		annotation SummarizationSetBy = Automatic
+
+	column #DíaSemana
+		formatString: 0
+		lineageTag: b9a99fca-9f96-4cdc-a047-093c6df660e2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [#DíaSemana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column #SemanaAño
+		formatString: 0
+		lineageTag: 7e5c57ce-06f2-4054-ab10-b2ee177b4820
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [#SemanaAño]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CierreSemana
+		formatString: General Date
+		lineageTag: 16c04c8b-b659-4f1f-b375-cd2738dd64b6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CierreSemana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Día
+		dataType: string
+		lineageTag: 7f3284e8-2799-4fc7-b663-f1ca19353cae
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Día]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DíaCorto
+		lineageTag: 0582bbf8-be2b-429e-ae67-f31bfce5bc49
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DíaCorto]
+
+		annotation SummarizationSetBy = Automatic
+
+	column AñoTrimestre
+		lineageTag: f8b516b8-c984-4418-8ee3-e0682c373683
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AñoTrimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año#Mes
+		lineageTag: 8fc41932-984f-4c5f-ad1f-6467dd94808f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Año#Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column AñoMesCorto
+		lineageTag: 1222d2fa-94dd-497d-8597-caa264d7591b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AñoMesCorto]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CierreMes
+		formatString: General Date
+		lineageTag: 52a108c7-e700-4232-a7a2-2d651778a65c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CierreMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CalendarioFechaModificacion = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR ( DATE( YEAR ( MIN ( BBDD[FECHA MODIFICACION])), 01, 01), DATE( YEAR( MAX( BBDD[FECHA MODIFICACION] ) ), 12, 31 ) ),
+				    "FechaSK", FORMAT ( [Date], "YYYYMMDD" ),
+				    "Año", YEAR ( [Date] ),
+				    "#Trimestre", QUARTER ( [Date] ),
+				    "#Mes", MONTH ( [Date] ),
+				    "#Día", DAY ( [Date] ),
+				    "Trimestre", "T" & FORMAT ( [Date], "Q" ), 
+				    "Mes", FORMAT ( [Date], "MMMM" ),
+				    "MesCorto", FORMAT ( [Date], "MMM" ),
+				    "#DíaSemana", WEEKDAY ( [Date],2 ),
+				    "#SemanaAño", WEEKNUM ( [Date],2 ),
+				    "CierreSemana", ( [Date] + 7 - WEEKDAY( [Date],2 ) ),
+				    "Día", FORMAT ( [Date], "DDDD" ),
+				    "DíaCorto", FORMAT ( [Date], "DDD" ),
+				    "AñoTrimestre", FORMAT ( [Date], "YYYY" ) & "/T" & FORMAT ( [Date], "Q" ),
+				    "Año#Mes", FORMAT ( [Date], "YYYY/MM" ),
+				    "AñoMesCorto", FORMAT ( [Date], "YYYY/mmm" ),
+				    "CierreMes", EOMONTH( [Date], 0)
+				)
+				```
+
+	annotation PBI_Id = ea20d80e3ec34358a1bfb11aca19007d
+
