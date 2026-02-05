@@ -314,6 +314,53 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "caf1e9411de2452f7286",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimSede"
+              }
+            },
+            "Property": "Sede"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "57630aced91204f86a67",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "BBDD"
+              }
+            },
+            "Property": "FECHA MODIFICACION"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "70bd610297cad90715c2",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "BBDD"
+                  }
+                },
+                "Property": "NRO TRÁMITE"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
