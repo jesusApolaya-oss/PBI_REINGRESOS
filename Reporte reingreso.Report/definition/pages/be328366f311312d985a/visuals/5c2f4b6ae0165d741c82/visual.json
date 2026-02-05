@@ -328,25 +328,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "4711fc711714d1073018",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "BBDD"
-                  }
-                },
-                "Property": "NRO TRÁMITE"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

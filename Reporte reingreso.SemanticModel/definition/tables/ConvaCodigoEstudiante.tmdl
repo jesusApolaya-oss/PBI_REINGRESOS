@@ -1,0 +1,43 @@
+table ConvaCodigoEstudiante
+	lineageTag: df7a48f2-fd9c-480d-9be1-78440f0ca88d
+
+	column Codigo
+		dataType: string
+		lineageTag: 216d81f2-2e55-4e48-ab3c-40d9ca46f433
+		summarizeBy: none
+		sourceColumn: Codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID ConvaCodigoEstudiante'
+		dataType: int64
+		formatString: 0
+		lineageTag: e89b86a5-1f1c-42a4-a651-12e5870af7d7
+		summarizeBy: sum
+		sourceColumn: ID ConvaCodigoEstudiante
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ConvaCodigoEstudiante = m
+		mode: import
+		source = ```
+				let
+				    Origen = Conex,
+				    #"Conva xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/" = 
+				        Origen{[Name="Conva.xlsx", #"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"]}[Content],
+				    #"Libro de Excel importado" = 
+				        Excel.Workbook(#"Conva xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte de Convalidaciones/"),
+				    Sheet1_Sheet = #"Libro de Excel importado"{[Item="Sheet1", Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([Campania] = "2026-01 PG" or [Campania] = "2026-01 WA")),
+				    #"Otras columnas quitadas" = Table.SelectColumns(#"Filas filtradas",{"Codigo"}),
+				    #"Duplicados quitados" = Table.Distinct(#"Otras columnas quitadas"),
+				    #"Índice agregado" = Table.AddIndexColumn(#"Duplicados quitados", "ID ConvaCodigoEstudiante", 1, 1, Int64.Type)
+				in
+				    #"Índice agregado"
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

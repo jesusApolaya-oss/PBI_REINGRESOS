@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c1798cba2c52ff63415e",
+  "name": "b8ec9a3b4f1e22ee504e",
   "position": {
-    "x": 576,
+    "x": 816,
     "y": 496,
-    "z": 9000,
+    "z": 27001,
     "height": 47.999999999999993,
-    "width": 240.00000000000003,
-    "tabOrder": 6000
+    "width": 80,
+    "tabOrder": 27002
   },
   "visual": {
     "visualType": "actionButton",
@@ -45,7 +45,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'VER DETALLE EGRESADOS'"
+                  "Value": "'BBDD'"
                 }
               }
             },
@@ -88,8 +88,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0.6
+                      "ColorId": 3,
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -129,7 +129,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'PageNavigation'"
+                  "Value": "'WebUrl'"
                 }
               }
             },
@@ -137,6 +137,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'24a1bece7235e5add7d7'"
+                }
+              }
+            },
+            "webUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "'https://educorpperu.sharepoint.com/:x:/s/OPERACIONESACADMICAS_izhusr/IQBE38rrCYwRQYmxnZTLWfWEAaTSbSgI0GBV-k-0QEI65Ls?e=3oKGdz'"
                 }
               }
             }

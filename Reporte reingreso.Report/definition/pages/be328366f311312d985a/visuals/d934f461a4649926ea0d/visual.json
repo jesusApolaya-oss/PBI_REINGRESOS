@@ -263,39 +263,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "419fb77dac03835a425c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "BBDD"
-              }
-            },
-            "Property": "NumSem"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f8056be033d82373edbf",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "BBDD"
-                  }
-                },
-                "Property": "NRO TRÁMITE"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

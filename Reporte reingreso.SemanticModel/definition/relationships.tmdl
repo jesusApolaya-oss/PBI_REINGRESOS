@@ -75,3 +75,17 @@ relationship AutoDetected_4cf87a48-6765-457d-87ca-653e6ad0e1c0
 	fromColumn: Conva.Carrera
 	toColumn: Grupos_Conva.Carrera
 
+relationship cd1afc55-d158-4a22-a29a-3be6e36bdc5e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: EgresadosUPN.Codigo
+	toColumn: ConvaCodigoEstudiante.Codigo
+
+	annotation PBI_IsFromSource = FS
+
+relationship 27c7b88c-b49a-57fd-4355-fe4947c93492
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Conva.Codigo
+	toColumn: ConvaCodigoEstudiante.Codigo
+

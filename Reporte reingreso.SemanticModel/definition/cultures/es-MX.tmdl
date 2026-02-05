@@ -3231,6 +3231,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "actualizacion": {
@@ -3247,16 +3250,13 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ultima actualización": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
 			          }
 			        }
 			      ],
@@ -3272,6 +3272,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
@@ -3291,6 +3294,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "año": {
@@ -3315,6 +3321,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "trimestre": {
@@ -3339,6 +3348,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "me": {
@@ -3363,6 +3375,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "día": {
@@ -3384,16 +3399,13 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "fecha última actualización": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
 			          }
 			        }
 			      ],
@@ -3407,16 +3419,13 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "hora última actualización": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
 			          }
 			        }
 			      ],
@@ -4734,6 +4743,16 @@ cultureInfo es-MX
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Grupos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5164,6 +5183,16 @@ cultureInfo es-MX
 			          }
 			        },
 			        {
+			          "Grupos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Grupo": {
 			            "State": "Suggested",
 			            "Source": {
@@ -5274,23 +5303,525 @@ cultureInfo es-MX
 			          }
 			        }
 			      ]
+			    },
+			    "conva_codigo_estudiante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ConvaCodigoEstudiante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conva codigo estudiante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ConvaCodigoEstudiante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante.codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ConvaCodigoEstudiante",
+			          "ConceptualProperty": "Codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante.ID_ConvaCodigoEstudiante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ConvaCodigoEstudiante",
+			          "ConceptualProperty": "ID ConvaCodigoEstudiante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID ConvaCodigoEstudiante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "egresados UPN": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "egresado UPN": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "EgresadosUPN": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "N°"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n°": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.sede": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Sede"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sede": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.consejero_admision": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "ConsejeroAdmision"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "consejero admision": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ConsejeroAdmision": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.estudiante_entrego_documentos_para_convalidacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "EstudianteEntregoDocumentosParaConvalidacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estudiante entrego documentos para convalidacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estudiante entrego documento para convalidacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "EstudianteEntregoDocumentosParaConvalidacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.fecha_notificacion_academia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "FechaNotificacionAcademia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha notificacion academia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FechaNotificacionAcademia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fecha notificacion academe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fecha notificacion university": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.carrera": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Carrera"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carrera": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.programa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Programa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "programa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Codigo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.apellido_paterno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "ApellidoPaterno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apellido paterno": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ApellidoPaterno": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.apellido_materno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "ApellidoMaterno"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apellido materno": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ApellidoMaterno": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Nombres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.modalidad_ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "ModalidadIngreso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "modalidad ingreso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ModalidadIngreso": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.estado_convalidacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "EstadoConvalidacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado convalidacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EstadoConvalidacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.columna_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "Columna1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "columna 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Columna1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "egresados_UPN.ID_ConvaCodigoEstudiante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "EgresadosUPN",
+			          "ConceptualProperty": "ID ConvaCodigoEstudiante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID ConvaCodigoEstudiante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential convacodigoestudiante": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "actualizacion_ultima_actualización_trimestre_has_actualizacion_ultima_actualización_me": {
+			    "bbdd_column_25_trimestre_has_bbdd_column_25_me": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.trimestre": {
+			        "bbdd.column_25.trimestre": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.trimestre"
+			            "Entity": "bbdd.column_25.trimestre"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.me": {
+			        "bbdd.column_25.me": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.me"
+			            "Entity": "bbdd.column_25.me"
 			          }
 			        }
 			      },
@@ -5298,10 +5829,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.me"
+			              "Role": "bbdd.column_25.me"
 			            }
 			          },
 			          "State": "Generated",
@@ -5311,10 +5842,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.me"
+			              "Role": "bbdd.column_25.me"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5324,7 +5855,7 @@ cultureInfo es-MX
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.me"
+			              "Role": "bbdd.column_25.me"
 			            },
 			            "Prepositions": [
 			              {
@@ -5334,7 +5865,7 @@ cultureInfo es-MX
 			              }
 			            ],
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5343,20 +5874,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_año_has_actualizacion_ultima_actualización_trimestre": {
+			    "bbdd_column_25_año_has_bbdd_column_25_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.año": {
+			        "bbdd.column_25.año": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.año"
+			            "Entity": "bbdd.column_25.año"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.trimestre": {
+			        "bbdd.column_25.trimestre": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.trimestre"
+			            "Entity": "bbdd.column_25.trimestre"
 			          }
 			        }
 			      },
@@ -5364,10 +5895,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.año"
+			              "Role": "bbdd.column_25.año"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5377,10 +5908,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.año"
+			              "Role": "bbdd.column_25.año"
 			            }
 			          },
 			          "State": "Generated",
@@ -5390,7 +5921,7 @@ cultureInfo es-MX
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -5400,7 +5931,7 @@ cultureInfo es-MX
 			              }
 			            ],
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.año"
+			              "Role": "bbdd.column_25.año"
 			            }
 			          },
 			          "State": "Generated",
@@ -5409,20 +5940,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_jerarquía_de_fecha_has_actualizacion_ultima_actualización_día": {
+			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_día": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.jerarquía_de_fecha": {
+			        "bbdd.column_25.jerarquía_de_fecha": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.día": {
+			        "bbdd.column_25.día": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.día"
+			            "Entity": "bbdd.column_25.día"
 			          }
 			        }
 			      },
@@ -5430,10 +5961,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			              "Role": "bbdd.column_25.jerarquía_de_fecha"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.día"
+			              "Role": "bbdd.column_25.día"
 			            }
 			          },
 			          "State": "Generated",
@@ -5442,20 +5973,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_jerarquía_de_fecha_has_actualizacion_ultima_actualización_me": {
+			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_me": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.jerarquía_de_fecha": {
+			        "bbdd.column_25.jerarquía_de_fecha": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.me": {
+			        "bbdd.column_25.me": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.me"
+			            "Entity": "bbdd.column_25.me"
 			          }
 			        }
 			      },
@@ -5463,10 +5994,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			              "Role": "bbdd.column_25.jerarquía_de_fecha"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.me"
+			              "Role": "bbdd.column_25.me"
 			            }
 			          },
 			          "State": "Generated",
@@ -5475,20 +6006,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_jerarquía_de_fecha_has_actualizacion_ultima_actualización_trimestre": {
+			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.jerarquía_de_fecha": {
+			        "bbdd.column_25.jerarquía_de_fecha": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.trimestre": {
+			        "bbdd.column_25.trimestre": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.trimestre"
+			            "Entity": "bbdd.column_25.trimestre"
 			          }
 			        }
 			      },
@@ -5496,10 +6027,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			              "Role": "bbdd.column_25.jerarquía_de_fecha"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.trimestre"
+			              "Role": "bbdd.column_25.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -5508,20 +6039,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_jerarquía_de_fecha_has_actualizacion_ultima_actualización_año": {
+			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_año": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización.jerarquía_de_fecha": {
+			        "bbdd.column_25.jerarquía_de_fecha": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.año": {
+			        "bbdd.column_25.año": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.año"
+			            "Entity": "bbdd.column_25.año"
 			          }
 			        }
 			      },
@@ -5529,10 +6060,10 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			              "Role": "bbdd.column_25.jerarquía_de_fecha"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.año"
+			              "Role": "bbdd.column_25.año"
 			            }
 			          },
 			          "State": "Generated",
@@ -5541,20 +6072,20 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_has_jerarquía_de_fecha": {
+			    "bbdd_column_25_has_jerarquía_de_fecha": {
 			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
+			        "ConceptualEntity": "BBDD"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "actualizacion.ultima_actualización": {
+			        "bbdd.column_25": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización"
+			            "Entity": "bbdd.column_25"
 			          }
 			        },
-			        "actualizacion.ultima_actualización.jerarquía_de_fecha": {
+			        "bbdd.column_25.jerarquía_de_fecha": {
 			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
 			          }
 			        }
 			      },
@@ -5562,15 +6093,15 @@ cultureInfo es-MX
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización"
+			              "Role": "bbdd.column_25"
 			            },
 			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.jerarquía_de_fecha"
+			              "Role": "bbdd.column_25.jerarquía_de_fecha"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "ultima_actualizacións_have_jerarquía_de_fechas"
+			          "ID": "column_25_have_jerarquía_de_fechas"
 			        }
 			      ]
 			    },
@@ -7752,6 +8283,105 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
+			    "egresados_UPN_has_conva_codigo_estudiante": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "conva_codigo_estudiante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_conva_codigo_estudiantes"
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante_has_conva": {
+			      "Binding": {
+			        "ConceptualEntity": "ConvaCodigoEstudiante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        },
+			        "conva": {
+			          "Target": {
+			            "Entity": "conva"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva_codigo_estudiante"
+			            },
+			            "Object": {
+			              "Role": "conva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "conva_codigo_estudiantes_have_convas"
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante_has_egresados_UPN": {
+			      "Binding": {
+			        "ConceptualEntity": "ConvaCodigoEstudiante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        },
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva_codigo_estudiante"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "conva_codigo_estudiantes_have_egresados_UPNs"
+			        }
+			      ]
+			    },
 			    "equipos_reingreso_has_dim_responsable": {
 			      "Binding": {
 			        "ConceptualEntity": "EquiposReingreso"
@@ -7841,6 +8471,39 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_sedes_have_equipos_reingresos"
+			        }
+			      ]
+			    },
+			    "conva_has_conva_codigo_estudiante": {
+			      "Binding": {
+			        "ConceptualEntity": "Conva"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "conva": {
+			          "Target": {
+			            "Entity": "conva"
+			          }
+			        },
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva"
+			            },
+			            "Object": {
+			              "Role": "conva_codigo_estudiante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "convas_have_conva_codigo_estudiantes"
 			        }
 			      ]
 			    },
@@ -8170,6 +8833,600 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_sedes_have_bbdds"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_ID_ConvaCodigoEstudiante": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.ID_ConvaCodigoEstudiante": {
+			          "Target": {
+			            "Entity": "egresados_UPN.ID_ConvaCodigoEstudiante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.ID_ConvaCodigoEstudiante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_ID_ConvaCodigoEstudiantes"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_columna_1": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.columna_1": {
+			          "Target": {
+			            "Entity": "egresados_UPN.columna_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.columna_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_columna_1"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_estado_convalidacion": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.estado_convalidacion": {
+			          "Target": {
+			            "Entity": "egresados_UPN.estado_convalidacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.estado_convalidacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_estado_convalidacions"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.estado": {
+			          "Target": {
+			            "Entity": "egresados_UPN.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_estado"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_modalidad_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.modalidad_ingreso": {
+			          "Target": {
+			            "Entity": "egresados_UPN.modalidad_ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.modalidad_ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_modalidad_ingresos"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.nombre": {
+			          "Target": {
+			            "Entity": "egresados_UPN.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_nombres"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_apellido_materno": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.apellido_materno": {
+			          "Target": {
+			            "Entity": "egresados_UPN.apellido_materno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.apellido_materno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_apellido_maternos"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_apellido_paterno": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.apellido_paterno": {
+			          "Target": {
+			            "Entity": "egresados_UPN.apellido_paterno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.apellido_paterno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_apellido_paternos"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.codigo": {
+			          "Target": {
+			            "Entity": "egresados_UPN.codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_codigos"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_programa": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.programa": {
+			          "Target": {
+			            "Entity": "egresados_UPN.programa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.programa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_programas"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_carrera": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.carrera": {
+			          "Target": {
+			            "Entity": "egresados_UPN.carrera"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.carrera"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_carrera"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_fecha_notificacion_academia": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.fecha_notificacion_academia": {
+			          "Target": {
+			            "Entity": "egresados_UPN.fecha_notificacion_academia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.fecha_notificacion_academia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_fecha_notificacion_academia"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_estudiante_entrego_documentos_para_convalidacion": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.estudiante_entrego_documentos_para_convalidacion": {
+			          "Target": {
+			            "Entity": "egresados_UPN.estudiante_entrego_documentos_para_convalidacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.estudiante_entrego_documentos_para_convalidacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_estudiante_entrego_documentos_para_convalidacions"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_consejero_admision": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.consejero_admision": {
+			          "Target": {
+			            "Entity": "egresados_UPN.consejero_admision"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.consejero_admision"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_consejero_admisions"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_sede": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.sede": {
+			          "Target": {
+			            "Entity": "egresados_UPN.sede"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.sede"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_sedes"
+			        }
+			      ]
+			    },
+			    "egresados_UPN_has_n": {
+			      "Binding": {
+			        "ConceptualEntity": "EgresadosUPN"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "egresados_UPN": {
+			          "Target": {
+			            "Entity": "egresados_UPN"
+			          }
+			        },
+			        "egresados_UPN.n": {
+			          "Target": {
+			            "Entity": "egresados_UPN.n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "egresados_UPN"
+			            },
+			            "Object": {
+			              "Role": "egresados_UPN.n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "egresados_UPNs_have_n"
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante_has_ID_ConvaCodigoEstudiante": {
+			      "Binding": {
+			        "ConceptualEntity": "ConvaCodigoEstudiante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        },
+			        "conva_codigo_estudiante.ID_ConvaCodigoEstudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante.ID_ConvaCodigoEstudiante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva_codigo_estudiante"
+			            },
+			            "Object": {
+			              "Role": "conva_codigo_estudiante.ID_ConvaCodigoEstudiante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "conva_codigo_estudiantes_have_ID_ConvaCodigoEstudiantes"
+			        }
+			      ]
+			    },
+			    "conva_codigo_estudiante_has_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "ConvaCodigoEstudiante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "conva_codigo_estudiante": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante"
+			          }
+			        },
+			        "conva_codigo_estudiante.codigo": {
+			          "Target": {
+			            "Entity": "conva_codigo_estudiante.codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva_codigo_estudiante"
+			            },
+			            "Object": {
+			              "Role": "conva_codigo_estudiante.codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "conva_codigo_estudiantes_have_codigos"
 			        }
 			      ]
 			    },
@@ -9602,105 +10859,6 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "equipos_reingresos_have_grupos"
-			        }
-			      ]
-			    },
-			    "actualizacion_has_hora_última_actualización": {
-			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "actualizacion": {
-			          "Target": {
-			            "Entity": "actualizacion"
-			          }
-			        },
-			        "actualizacion.hora_última_actualización": {
-			          "Target": {
-			            "Entity": "actualizacion.hora_última_actualización"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "actualizacion"
-			            },
-			            "Object": {
-			              "Role": "actualizacion.hora_última_actualización"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "actualizacions_have_hora_última_actualización"
-			        }
-			      ]
-			    },
-			    "actualizacion_has_fecha_última_actualización": {
-			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "actualizacion": {
-			          "Target": {
-			            "Entity": "actualizacion"
-			          }
-			        },
-			        "actualizacion.fecha_última_actualización": {
-			          "Target": {
-			            "Entity": "actualizacion.fecha_última_actualización"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "actualizacion"
-			            },
-			            "Object": {
-			              "Role": "actualizacion.fecha_última_actualización"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "actualizacions_have_fecha_última_actualización"
-			        }
-			      ]
-			    },
-			    "actualizacion_has_ultima_actualización": {
-			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "actualizacion": {
-			          "Target": {
-			            "Entity": "actualizacion"
-			          }
-			        },
-			        "actualizacion.ultima_actualización": {
-			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "actualizacion"
-			            },
-			            "Object": {
-			              "Role": "actualizacion.ultima_actualización"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "actualizacions_have_ultima_actualizacións"
 			        }
 			      ]
 			    },
@@ -12521,369 +13679,6 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "actualizacion_ultima_actualización_me_has_actualizacion_ultima_actualización_día": {
-			      "Binding": {
-			        "ConceptualEntity": "Actualizacion"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "actualizacion.ultima_actualización.me": {
-			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.me"
-			          }
-			        },
-			        "actualizacion.ultima_actualización.día": {
-			          "Target": {
-			            "Entity": "actualizacion.ultima_actualización.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.me"
-			            },
-			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días6"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.día"
-			            },
-			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me6"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "actualizacion.ultima_actualización.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "actualizacion.ultima_actualización.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me6"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25": {
-			          "Target": {
-			            "Entity": "bbdd.column_25"
-			          }
-			        },
-			        "bbdd.column_25.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "column_25_have_jerarquía_de_fechas"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_año": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
-			          }
-			        },
-			        "bbdd.column_25.año": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años7"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
-			          }
-			        },
-			        "bbdd.column_25.trimestre": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres7"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_me": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
-			          }
-			        },
-			        "bbdd.column_25.me": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me7"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_jerarquía_de_fecha_has_bbdd_column_25_día": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.jerarquía_de_fecha"
-			          }
-			        },
-			        "bbdd.column_25.día": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días7"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_año_has_bbdd_column_25_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.año": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.año"
-			          }
-			        },
-			        "bbdd.column_25.trimestre": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.año"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "años_have_trimestres7"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.trimestre"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_años7"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "bbdd.column_25.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_años7"
-			        }
-			      ]
-			    },
-			    "bbdd_column_25_trimestre_has_bbdd_column_25_me": {
-			      "Binding": {
-			        "ConceptualEntity": "BBDD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bbdd.column_25.trimestre": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.trimestre"
-			          }
-			        },
-			        "bbdd.column_25.me": {
-			          "Target": {
-			            "Entity": "bbdd.column_25.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.trimestre"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me7"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.me"
-			            },
-			            "Object": {
-			              "Role": "bbdd.column_25.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres7"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "bbdd.column_25.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "bbdd.column_25.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres7"
-			        }
-			      ]
-			    },
 			    "bbdd_column_25_me_has_bbdd_column_25_día": {
 			      "Binding": {
 			        "ConceptualEntity": "BBDD"
@@ -12913,7 +13708,7 @@ cultureInfo es-MX
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_días7"
+			          "ID": "me_have_días6"
 			        },
 			        {
 			          "Attribute": {
@@ -12926,7 +13721,7 @@ cultureInfo es-MX
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_have_me7"
+			          "ID": "días_have_me6"
 			        },
 			        {
 			          "Preposition": {
@@ -12946,7 +13741,7 @@ cultureInfo es-MX
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_are_in_me7"
+			          "ID": "días_are_in_me6"
 			        }
 			      ]
 			    }

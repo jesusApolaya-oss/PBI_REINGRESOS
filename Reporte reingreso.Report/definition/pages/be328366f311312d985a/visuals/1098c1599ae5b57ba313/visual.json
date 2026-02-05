@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c4fba3c3a55910f03559",
+  "name": "1098c1599ae5b57ba313",
   "position": {
-    "x": 557.5,
-    "y": 203.75,
+    "x": 576,
+    "y": 208,
     "z": 0,
-    "height": 337.5,
-    "width": 275,
-    "tabOrder": 27000
+    "height": 336,
+    "width": 320,
+    "tabOrder": 27001
   },
   "visual": {
     "visualType": "pivotTable",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Conva"
+                      "Entity": "EgresadosUPN"
                     }
                   },
-                  "Property": "EstadoConvalidacion"
+                  "Property": "Estado"
                 }
               },
-              "queryRef": "Conva.EstadoConvalidacion",
-              "nativeQueryRef": "EstadoConvalidacion",
+              "queryRef": "EgresadosUPN.Estado",
+              "nativeQueryRef": "Estado",
               "active": true
             }
           ]
@@ -46,8 +46,9 @@
                 }
               },
               "queryRef": "Grupos_Conva.Responsable",
-              "nativeQueryRef": "Responsable",
-              "active": true
+              "nativeQueryRef": "Grupos",
+              "active": true,
+              "displayName": "Grupos"
             }
           ],
           "showAll": true
@@ -61,42 +62,20 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Conva"
+                          "Entity": "EgresadosUPN"
                         }
                       },
-                      "Property": "Codigo"
+                      "Property": "Estado"
                     }
                   },
-                  "Function": 2
+                  "Function": 5
                 }
               },
-              "queryRef": "Min(Conva.Codigo)",
-              "nativeQueryRef": "Recuento de Codigo"
+              "queryRef": "Min(EgresadosUPN.Estado)",
+              "nativeQueryRef": "Recuento de Estado1"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Conva"
-                      }
-                    },
-                    "Property": "Codigo"
-                  }
-                },
-                "Function": 2
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "objects": {
@@ -139,13 +118,43 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "86.25D"
+                  "Value": "67.7622164555716D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Grupos_Conva.Responsable"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(EgresadosUPN.Estado)"
           }
         }
       ]
@@ -164,7 +173,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'STATUS POR TIPO EGRESADOS'"
+                  "Value": "'PENDIENTE NUEVOS / EGRESADOS UPN'"
                 }
               }
             },

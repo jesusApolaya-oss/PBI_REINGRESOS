@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 425.4578030671525,
-            "y": 112.66027350564515
+            "y": 137.66027350564514
           },
           "nodeIndex": "BBDD",
           "nodeLineageTag": "5aec6366-2d64-46a1-9672-3277b42e7a5e",
@@ -25,7 +25,7 @@
         {
           "location": {
             "x": 0,
-            "y": 0
+            "y": 25
           },
           "nodeIndex": "DimCarrera",
           "nodeLineageTag": "9169f69b-c987-4f2e-b423-dccbac550149",
@@ -38,7 +38,7 @@
         {
           "location": {
             "x": 401.47326600000014,
-            "y": 445.659659
+            "y": 470.659659
           },
           "nodeIndex": "DimSede",
           "nodeLineageTag": "98ff1795-f8cc-4bb0-b1ff-7fc57adef879",
@@ -51,7 +51,7 @@
         {
           "location": {
             "x": 0,
-            "y": 224
+            "y": 249
           },
           "nodeIndex": "CalendarioFechaCreacion",
           "nodeLineageTag": "9e064df1-2d77-49d1-b414-84af476a58b2",
@@ -64,7 +64,7 @@
         {
           "location": {
             "x": 746.28836791650781,
-            "y": 23.701517228281585
+            "y": 48.701517228281588
           },
           "nodeIndex": "Conva",
           "nodeLineageTag": "67cfe023-1694-43e2-b4f5-6aeb63eea256",
@@ -78,7 +78,7 @@
         {
           "location": {
             "x": 80.963599071924364,
-            "y": 523.84316301843228
+            "y": 548.84316301843228
           },
           "nodeIndex": "Actualizacion",
           "nodeLineageTag": "85a7f7d8-c630-420a-8ba2-6a50e3b4a077",
@@ -91,7 +91,7 @@
         {
           "location": {
             "x": 913.9217782632013,
-            "y": 581.41514932173015
+            "y": 606.41514932173015
           },
           "nodeIndex": "EquiposReingreso",
           "nodeLineageTag": "a34024dd-e499-4d60-8433-bc4f37963cd8",
@@ -103,21 +103,8 @@
         },
         {
           "location": {
-            "x": 291.58564981301816,
-            "y": 683.45336096749736
-          },
-          "nodeIndex": "BBDD_Conva",
-          "nodeLineageTag": "a3892a7d-88eb-4044-9c22-6d15fcd3c1b5",
-          "size": {
-            "height": 176,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
             "x": 1089.1871641712451,
-            "y": 119.79331751530603
+            "y": 144.79331751530603
           },
           "nodeIndex": "CalendarioFechaModificacion",
           "nodeLineageTag": "b8684484-fe01-4fc9-b595-c895be6004e3",
@@ -129,8 +116,8 @@
         },
         {
           "location": {
-            "x": 1273.9797481712451,
-            "y": 610.60302548374852
+            "x": 345.68178417124545,
+            "y": 780.87102748374843
           },
           "nodeIndex": "Tipo casos atendidos",
           "nodeLineageTag": "8fb10e75-c4bf-45fa-8973-73dd2d82cbc6",
@@ -143,7 +130,7 @@
         {
           "location": {
             "x": 876.4166006008976,
-            "y": 314.30668885799844
+            "y": 339.30668885799844
           },
           "nodeIndex": "DimResponsables",
           "nodeLineageTag": "87949a6e-26cb-49cb-87f6-9da0019a52c9",
@@ -155,12 +142,52 @@
         },
         {
           "location": {
-            "x": 1557.9797481712451,
-            "y": 329.72668048374868
+            "x": 80.497874171245712,
+            "y": 680.6939044837485
           },
           "nodeIndex": "Medidas",
+          "nodeLineageTag": "9e39a53e-f451-4b3b-8f51-1a1b176749d5",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1578.0171591712453,
+            "y": 126.40414474187432
+          },
+          "nodeIndex": "Grupos_Conva",
+          "nodeLineageTag": "3c9a0add-2d71-4f5b-9fd7-c711e5b4a260",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2459.9797481712449,
+            "y": 292.30151274187426
+          },
+          "nodeIndex": "ConvaCodigoEstudiante",
+          "nodeLineageTag": "df7a48f2-fd9c-480d-9be1-78440f0ca88d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2175.9797481712449,
+            "y": 206.30151274187426
+          },
+          "nodeIndex": "EgresadosUPN",
+          "nodeLineageTag": "6f10fead-17ab-4206-9d72-8f2c4d164c52",
+          "size": {
+            "height": 300,
             "width": 234
           },
           "zIndex": 0
@@ -278,8 +305,205 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 231.999994913737,
+        "y": 370.66665649414063
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2055.0965651826682,
+            "y": 377.56821087514174
+          },
+          "nodeIndex": "Actualizacion",
+          "nodeLineageTag": "85a7f7d8-c630-420a-8ba2-6a50e3b4a077",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 388.70697867132139,
+            "y": 292.15540926503741
+          },
+          "nodeIndex": "BBDD",
+          "nodeLineageTag": "5aec6366-2d64-46a1-9672-3277b42e7a5e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 98.777455909612343,
+            "y": 467.1563335114879
+          },
+          "nodeIndex": "CalendarioFechaCreacion",
+          "nodeLineageTag": "9e064df1-2d77-49d1-b414-84af476a58b2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 114.14776538896115
+          },
+          "nodeIndex": "CalendarioFechaModificacion",
+          "nodeLineageTag": "b8684484-fe01-4fc9-b595-c895be6004e3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 967.00399804982044,
+            "y": 273.97780852728289
+          },
+          "nodeIndex": "Conva",
+          "nodeLineageTag": "67cfe023-1694-43e2-b4f5-6aeb63eea256",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1195.6449905390614,
+            "y": 710.81548763178159
+          },
+          "nodeIndex": "ConvaCodigoEstudiante",
+          "nodeLineageTag": "df7a48f2-fd9c-480d-9be1-78440f0ca88d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 422.07854493469165,
+            "y": 681.13642175028349
+          },
+          "nodeIndex": "DimCarrera",
+          "nodeLineageTag": "9169f69b-c987-4f2e-b423-dccbac550149",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 336.68212331005509,
+            "y": 134.55670196012443
+          },
+          "nodeIndex": "DimResponsables",
+          "nodeLineageTag": "87949a6e-26cb-49cb-87f6-9da0019a52c9",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 678.081623556794,
+            "y": 450.29060605639063
+          },
+          "nodeIndex": "DimSede",
+          "nodeLineageTag": "98ff1795-f8cc-4bb0-b1ff-7fc57adef879",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 973.90305594082974,
+            "y": 890.66494078672406
+          },
+          "nodeIndex": "EgresadosUPN",
+          "nodeLineageTag": "6f10fead-17ab-4206-9d72-8f2c4d164c52",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 677.29202664138722,
+            "y": -50
+          },
+          "nodeIndex": "EquiposReingreso",
+          "nodeLineageTag": "a34024dd-e499-4d60-8433-bc4f37963cd8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1253.0965651826684,
+            "y": 383.838369603158
+          },
+          "nodeIndex": "Grupos_Conva",
+          "nodeLineageTag": "3c9a0add-2d71-4f5b-9fd7-c711e5b4a260",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2339.0965651826682,
+            "y": 353.56821087514174
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "9e39a53e-f451-4b3b-8f51-1a1b176749d5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2623.0965651826682,
+            "y": 377.56821087514174
+          },
+          "nodeIndex": "Tipo casos atendidos",
+          "nodeLineageTag": "8fb10e75-c4bf-45fa-8973-73dd2d82cbc6",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Disposición 2",
+      "zoomValue": 60,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "Todas las tablas",
+  "selectedDiagram": "Disposición 2",
   "defaultDiagram": "Todas las tablas"
 }

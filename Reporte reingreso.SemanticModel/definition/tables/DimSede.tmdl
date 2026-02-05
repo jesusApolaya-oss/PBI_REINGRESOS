@@ -1,4 +1,5 @@
 table DimSede
+	excludeFromModelRefresh
 	lineageTag: 98ff1795-f8cc-4bb0-b1ff-7fc57adef879
 
 	column 'SEDE ESTUDIANTE'

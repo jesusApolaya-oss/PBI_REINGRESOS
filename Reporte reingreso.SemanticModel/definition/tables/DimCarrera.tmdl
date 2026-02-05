@@ -1,4 +1,5 @@
 table DimCarrera
+	excludeFromModelRefresh
 	lineageTag: 9169f69b-c987-4f2e-b423-dccbac550149
 
 	column Carreras

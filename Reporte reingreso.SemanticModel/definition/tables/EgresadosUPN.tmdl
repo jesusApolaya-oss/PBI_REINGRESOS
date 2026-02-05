@@ -1,0 +1,151 @@
+table EgresadosUPN
+	lineageTag: 6f10fead-17ab-4206-9d72-8f2c4d164c52
+
+	column N°
+		dataType: double
+		lineageTag: 01af51f7-af95-4302-9e68-7ed90f27eb06
+		summarizeBy: sum
+		sourceColumn: N°
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sede
+		dataType: string
+		lineageTag: e47d3924-18ad-4af4-b397-7528f5fb1bf8
+		summarizeBy: none
+		sourceColumn: Sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column ConsejeroAdmision
+		dataType: string
+		lineageTag: 35f7ac71-f386-4054-81cd-911159647e13
+		summarizeBy: none
+		sourceColumn: ConsejeroAdmision
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstudianteEntregoDocumentosParaConvalidacion
+		dataType: string
+		lineageTag: 6706078c-c9f8-4236-b8b1-53727bc67494
+		summarizeBy: none
+		sourceColumn: EstudianteEntregoDocumentosParaConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaNotificacionAcademia
+		dataType: string
+		lineageTag: 7a383a3e-c256-4b00-94ca-56ef76ef03c8
+		summarizeBy: none
+		sourceColumn: FechaNotificacionAcademia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Carrera
+		dataType: string
+		lineageTag: ffc412b3-e638-461b-bfa3-a70078194599
+		summarizeBy: none
+		sourceColumn: Carrera
+
+		annotation SummarizationSetBy = Automatic
+
+	column Programa
+		dataType: string
+		lineageTag: 0db2cfd0-8ba3-4899-bc77-f68c0ebfcf66
+		summarizeBy: none
+		sourceColumn: Programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Codigo
+		dataType: string
+		lineageTag: 5c61bb45-cd2d-4428-88cc-786c4a8ab0bc
+		summarizeBy: none
+		sourceColumn: Codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoPaterno
+		dataType: string
+		lineageTag: 6156c655-b83d-4d6e-acce-87b7714cf320
+		summarizeBy: none
+		sourceColumn: ApellidoPaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoMaterno
+		dataType: string
+		lineageTag: cf4798b5-3dcc-404b-b979-c449b964817a
+		summarizeBy: none
+		sourceColumn: ApellidoMaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombres
+		dataType: string
+		lineageTag: 8c6e1d21-1882-439c-a371-f6c921baf990
+		summarizeBy: none
+		sourceColumn: Nombres
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModalidadIngreso
+		dataType: string
+		lineageTag: 6e364ab3-c81a-4c88-ace8-96c26b17438a
+		summarizeBy: none
+		sourceColumn: ModalidadIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 3c9b95d7-211c-4485-a487-288458f19c38
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column EstadoConvalidacion
+		dataType: string
+		lineageTag: 35ce512d-73dd-45c8-9f7f-2083eff0f8ce
+		summarizeBy: none
+		sourceColumn: EstadoConvalidacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Columna1
+		dataType: string
+		lineageTag: b239c3d4-8f90-4892-8a7f-d8c850110bae
+		summarizeBy: none
+		sourceColumn: Columna1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID ConvaCodigoEstudiante'
+		dataType: int64
+		formatString: 0
+		lineageTag: 27915fec-296f-4599-9f52-c08053ae4320
+		summarizeBy: sum
+		sourceColumn: ID ConvaCodigoEstudiante
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EgresadosUPN = m
+		mode: import
+		source =
+				let
+				    Origen = Conex,
+				    #"Egresados UPN xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/" = Origen{[Name="Egresados UPN.xlsx",#"Folder Path"="https://educorpperu.sharepoint.com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"]}[Content],
+				    #"Libro de Excel importado" = Excel.Workbook(#"Egresados UPN xlsx_https://educorpperu sharepoint com/sites/OPERACIONESACADMICAS_izhusr/Documentos compartidos/Reportes/Reporte Reingresos/"),
+				    egresadosUPN_Table = #"Libro de Excel importado"{[Item="egresadosUPN",Kind="Table"]}[Data],
+				    #"Consultas combinadas" = Table.NestedJoin(egresadosUPN_Table, {"Codigo"}, ConvaCodigoEstudiante, {"Codigo"}, "ConvaCodigoEstudiante", JoinKind.LeftOuter),
+				    #"Se expandió ConvaCodigoEstudiante" = Table.ExpandTableColumn(#"Consultas combinadas", "ConvaCodigoEstudiante", {"ID ConvaCodigoEstudiante"}, {"ID ConvaCodigoEstudiante"})
+				in
+				    #"Se expandió ConvaCodigoEstudiante"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

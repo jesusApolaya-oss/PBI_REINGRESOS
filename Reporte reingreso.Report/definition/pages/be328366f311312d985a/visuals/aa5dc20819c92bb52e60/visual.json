@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "aa5dc20819c92bb52e60",
   "position": {
-    "x": 280,
-    "y": 206.25,
+    "x": 288,
+    "y": 208,
     "z": 11000,
-    "height": 335,
-    "width": 263.75,
+    "height": 336,
+    "width": 272,
     "tabOrder": 10000
   },
   "visual": {
@@ -46,8 +46,9 @@
                 }
               },
               "queryRef": "DimCarrera.Grupo Conva",
-              "nativeQueryRef": "Grupo Conva",
-              "active": true
+              "nativeQueryRef": "Grupos",
+              "active": true,
+              "displayName": "Grupos"
             }
           ],
           "showAll": true
@@ -130,6 +131,104 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "69.14285749504008D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "total": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "BBDD"
+                        }
+                      },
+                      "Property": "SLA"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "61.571428336065196D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "BBDD"
+                          }
+                        },
+                        "Property": "SLA"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Fuera'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(BBDD.NRO TRÁMITE)"
           }
         }
       ]

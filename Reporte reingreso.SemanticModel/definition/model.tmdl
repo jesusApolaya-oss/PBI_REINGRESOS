@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Conex","BBDD","DimCarrera","DimSede","Conva","Actualizacion","EquiposReingreso","DimResponsables","Grupos_Conva"]
+annotation PBI_QueryOrder = ["Conex","BBDD","DimCarrera","DimSede","Conva","Actualizacion","EquiposReingreso","DimResponsables","Grupos_Conva","ConvaCodigoEstudiante","EgresadosUPN"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -33,6 +33,8 @@ ref table DimResponsables
 ref table LocalDateTable_fcea5036-825d-43c4-b045-513a8bc06af1
 ref table Medidas
 ref table Grupos_Conva
+ref table ConvaCodigoEstudiante
+ref table EgresadosUPN
 
 ref cultureInfo es-MX
 

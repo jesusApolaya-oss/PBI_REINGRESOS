@@ -1,24 +1,32 @@
 table Actualizacion
+	isHidden
 	lineageTag: 85a7f7d8-c630-420a-8ba2-6a50e3b4a077
 
 	measure 'Fecha última actualización' =
 			
 			SELECTEDVALUE('Actualizacion'[Ultima actualización])
 		formatString: Long Date
+		isHidden
 		displayFolder: Actualizacion
 		lineageTag: 7c916abf-7d9f-495d-baff-66d7da310e8a
+
+		changedProperty = IsHidden
 
 	measure 'Hora última actualización' =
 			
 			SELECTEDVALUE('Actualizacion'[Ultima actualización])
 		formatString: hh:nn:ss
+		isHidden
 		displayFolder: Actualizacion
 		lineageTag: 3df24c1f-f72f-427e-8423-90b6f5623576
+
+		changedProperty = IsHidden
 
 		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column 'Ultima actualización'
 		dataType: dateTime
+		isHidden
 		formatString: General Date
 		lineageTag: 323b40f5-44ae-4000-8314-c31ecb87944f
 		summarizeBy: none
@@ -28,6 +36,8 @@ table Actualizacion
 			isDefault
 			relationship: ec473689-3797-4449-bc0d-964c3fdedfd3
 			defaultHierarchy: LocalDateTable_46db60d3-d94b-4dd1-b9df-b1c6d3aa5ff3.'Jerarquía de fechas'
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -41,6 +51,8 @@ table Actualizacion
 				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Column1", "Ultima actualización"}})
 				in
 				    #"Columnas con nombre cambiado"
+
+	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navegación
 
