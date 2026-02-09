@@ -31,6 +31,26 @@
             },
             {
               "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "BBDD"
+                        }
+                      },
+                      "Property": "CODIGO ESTUDIANTE"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(BBDD.CODIGO ESTUDIANTE)",
+              "nativeQueryRef": "Q",
+              "displayName": "Q"
+            },
+            {
+              "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
@@ -70,26 +90,6 @@
               },
               "queryRef": "BBDD.NRO TRÁMITE",
               "nativeQueryRef": "NRO TRÁMITE"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "BBDD"
-                        }
-                      },
-                      "Property": "CODIGO ESTUDIANTE"
-                    }
-                  },
-                  "Function": 5
-                }
-              },
-              "queryRef": "CountNonNull(BBDD.CODIGO ESTUDIANTE)",
-              "nativeQueryRef": "Recuento de CODIGO ESTUDIANTE",
-              "displayName": "Total"
             },
             {
               "field": {

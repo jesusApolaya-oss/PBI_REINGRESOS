@@ -32,9 +32,10 @@ table ConvaCodigoEstudiante
 				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([Campania] = "2026-01 PG" or [Campania] = "2026-01 WA")),
 				    #"Otras columnas quitadas" = Table.SelectColumns(#"Filas filtradas",{"Codigo"}),
 				    #"Duplicados quitados" = Table.Distinct(#"Otras columnas quitadas"),
-				    #"Índice agregado" = Table.AddIndexColumn(#"Duplicados quitados", "ID ConvaCodigoEstudiante", 1, 1, Int64.Type)
+				    #"Índice agregado" = Table.AddIndexColumn(#"Duplicados quitados", "ID ConvaCodigoEstudiante", 1, 1, Int64.Type),
+				    #"Filas filtradas1" = Table.SelectRows(#"Índice agregado", each [Codigo] <> null and [Codigo] <> "")
 				in
-				    #"Índice agregado"
+				    #"Filas filtradas1"
 				```
 
 	annotation PBI_NavigationStepName = Navegación

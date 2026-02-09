@@ -2329,6 +2329,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "codigo": {
@@ -5595,6 +5598,9 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "codigo": {
@@ -8313,60 +8319,7 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "egresados_UPNs_have_conva_codigo_estudiantes"
-			        }
-			      ]
-			    },
-			    "conva_codigo_estudiante_has_conva": {
-			      "Binding": {
-			        "ConceptualEntity": "ConvaCodigoEstudiante"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "conva_codigo_estudiante": {
-			          "Target": {
-			            "Entity": "conva_codigo_estudiante"
-			          }
 			        },
-			        "conva": {
-			          "Target": {
-			            "Entity": "conva"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "conva_codigo_estudiante"
-			            },
-			            "Object": {
-			              "Role": "conva"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "conva_codigo_estudiantes_have_convas"
-			        }
-			      ]
-			    },
-			    "conva_codigo_estudiante_has_egresados_UPN": {
-			      "Binding": {
-			        "ConceptualEntity": "ConvaCodigoEstudiante"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "conva_codigo_estudiante": {
-			          "Target": {
-			            "Entity": "conva_codigo_estudiante"
-			          }
-			        },
-			        "egresados_UPN": {
-			          "Target": {
-			            "Entity": "egresados_UPN"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
@@ -8504,6 +8457,19 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "convas_have_conva_codigo_estudiantes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "conva_codigo_estudiante"
+			            },
+			            "Object": {
+			              "Role": "conva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "conva_codigo_estudiantes_have_convas"
 			        }
 			      ]
 			    },
@@ -9097,39 +9063,6 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "egresados_UPNs_have_apellido_paternos"
-			        }
-			      ]
-			    },
-			    "egresados_UPN_has_codigo": {
-			      "Binding": {
-			        "ConceptualEntity": "EgresadosUPN"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "egresados_UPN": {
-			          "Target": {
-			            "Entity": "egresados_UPN"
-			          }
-			        },
-			        "egresados_UPN.codigo": {
-			          "Target": {
-			            "Entity": "egresados_UPN.codigo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "egresados_UPN"
-			            },
-			            "Object": {
-			              "Role": "egresados_UPN.codigo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "egresados_UPNs_have_codigos"
 			        }
 			      ]
 			    },
@@ -11486,39 +11419,6 @@ cultureInfo es-MX
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "convas_have_apellido_paternos"
-			        }
-			      ]
-			    },
-			    "conva_has_codigo": {
-			      "Binding": {
-			        "ConceptualEntity": "Conva"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "conva": {
-			          "Target": {
-			            "Entity": "conva"
-			          }
-			        },
-			        "conva.codigo": {
-			          "Target": {
-			            "Entity": "conva.codigo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "conva"
-			            },
-			            "Object": {
-			              "Role": "conva.codigo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "convas_have_codigos"
 			        }
 			      ]
 			    },
