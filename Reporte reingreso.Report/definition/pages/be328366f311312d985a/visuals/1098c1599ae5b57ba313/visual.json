@@ -30,7 +30,8 @@
               "nativeQueryRef": "Estado",
               "active": true
             }
-          ]
+          ],
+          "showAll": true
         },
         "Rows": {
           "projections": [

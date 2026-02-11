@@ -30,7 +30,8 @@
               "nativeQueryRef": "SLA",
               "active": true
             }
-          ]
+          ],
+          "showAll": true
         },
         "Rows": {
           "projections": [
